@@ -31,7 +31,13 @@ function Navbar(props: Props) {
     <React.Fragment>
       <CssBaseline />
       <HideOnScroll {...props}>
-        <AppBar></AppBar>
+        <AppBar>
+          <Toolbar>
+            <Typography variant="h6" component="div">
+              Scroll to hide App bar
+            </Typography>
+          </Toolbar>
+        </AppBar>
       </HideOnScroll>
       <Toolbar />
       <Container>
