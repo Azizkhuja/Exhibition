@@ -30,7 +30,9 @@ function Navbar(props: Props) {
   return (
     <React.Fragment>
       <CssBaseline />
-
+      <HideOnScroll {...props}>
+        <AppBar></AppBar>
+      </HideOnScroll>
       <Toolbar />
       <Container>
         <Box sx={{ my: 2 }}>
