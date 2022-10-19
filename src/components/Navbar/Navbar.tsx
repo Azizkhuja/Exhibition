@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import styled from "styled-components";
 import {
   AppBar,
   Toolbar,
@@ -32,11 +33,11 @@ function Navbar(props: Props) {
       <HideOnScroll {...props}>
         <AppBar>
           <Toolbar>
-            <Link to={"/visit"}>Visit</Link>
-            <Link to={"/collections"}>Collections</Link>
-            <Link to={"/events"}>Events</Link>
-            <Link to={"/exhibitions"}>Exhibitions</Link>
-            <Link to={"/learn"}>Learn</Link>
+            <LinkStyled to={"/visit"}>Visit</LinkStyled>
+            <LinkStyled to={"/collections"}>Collections</LinkStyled>
+            <LinkStyled to={"/events"}>Events</LinkStyled>
+            <LinkStyled to={"/exhibitions"}>Exhibitions</LinkStyled>
+            <LinkStyled to={"/learn"}>Learn</LinkStyled>
           </Toolbar>
         </AppBar>
       </HideOnScroll>
@@ -44,5 +45,10 @@ function Navbar(props: Props) {
     </>
   );
 }
+
+const LinkStyled = styled(Link)`
+  margin-right: 5px;
+  margin-left: 5px;
+`;
 
 export default Navbar;
