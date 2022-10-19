@@ -1,9 +1,11 @@
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Slide,
+  useScrollTrigger,
+} from "@mui/material";
 import CssBaseline from "@mui/material/CssBaseline";
-import useScrollTrigger from "@mui/material/useScrollTrigger";
-import Slide from "@mui/material/Slide";
 
 interface Props {
   window?: () => Window;
