@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import {
   AppBar,
   Toolbar,
-  Typography,
   Slide,
   useScrollTrigger,
   CssBaseline,
