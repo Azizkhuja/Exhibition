@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   AppBar,
   Toolbar,
@@ -32,9 +33,7 @@ function Navbar(props: Props) {
       <HideOnScroll {...props}>
         <AppBar>
           <Toolbar>
-            <Typography variant="h6" component="div">
-              Scroll to hide App bar
-            </Typography>
+            <Link to={"/gamelist/"}>app1</Link>
           </Toolbar>
         </AppBar>
       </HideOnScroll>
