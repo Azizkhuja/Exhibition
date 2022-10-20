@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import { alpha, styled } from "@mui/material/styles";
 import {
   AppBar,
   Toolbar,
@@ -8,6 +8,8 @@ import {
   CssBaseline,
 } from "@mui/material";
 import BeachAccessSharpIcon from "@mui/icons-material/BeachAccessSharp";
+import SearchIcon from "@mui/icons-material/Search";
+import InputBase from "@mui/material/InputBase";
 
 interface Props {
   window?: () => Window;
@@ -39,13 +41,13 @@ function Navbar(props: Props) {
             <div>
               <BeachAccessSharpIcon style={{ fontSize: 34, color: "#000" }} />
             </div>
-            <div>
+            <LinkContainer>
               <LinkStyled to={"/visit"}>Visit</LinkStyled>
               <LinkStyled to={"/collections"}>Collections</LinkStyled>
               <LinkStyled to={"/events"}>Events</LinkStyled>
               <LinkStyled to={"/exhibitions"}>Exhibitions</LinkStyled>
               <LinkStyled to={"/learn"}>Learn</LinkStyled>
-            </div>
+            </LinkContainer>
           </Toolbar>
         </AppBar>
       </HideOnScroll>
@@ -59,6 +61,11 @@ const LinkStyled = styled(Link)`
   margin-left: 5px;
   color: #000;
   text-decoration: none;
+`;
+const LinkContainer = styled("div")`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export default Navbar;
