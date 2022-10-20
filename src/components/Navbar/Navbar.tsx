@@ -33,11 +33,14 @@ function Navbar(props: Props) {
       <HideOnScroll {...props}>
         <AppBar>
           <Toolbar>
-            <LinkStyled to={"/visit"}>Visit</LinkStyled>
-            <LinkStyled to={"/collections"}>Collections</LinkStyled>
-            <LinkStyled to={"/events"}>Events</LinkStyled>
-            <LinkStyled to={"/exhibitions"}>Exhibitions</LinkStyled>
-            <LinkStyled to={"/learn"}>Learn</LinkStyled>
+            <div>Logo</div>
+            <div>
+              <LinkStyled to={"/visit"}>Visit</LinkStyled>
+              <LinkStyled to={"/collections"}>Collections</LinkStyled>
+              <LinkStyled to={"/events"}>Events</LinkStyled>
+              <LinkStyled to={"/exhibitions"}>Exhibitions</LinkStyled>
+              <LinkStyled to={"/learn"}>Learn</LinkStyled>
+            </div>
           </Toolbar>
         </AppBar>
       </HideOnScroll>
