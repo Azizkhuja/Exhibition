@@ -7,6 +7,7 @@ import {
   useScrollTrigger,
   CssBaseline,
 } from "@mui/material";
+import BeachAccessSharpIcon from "@mui/icons-material/BeachAccessSharp";
 
 interface Props {
   window?: () => Window;
@@ -33,7 +34,9 @@ function Navbar(props: Props) {
       <HideOnScroll {...props}>
         <AppBar>
           <Toolbar>
-            <div>Logo</div>
+            <div>
+              <BeachAccessSharpIcon />
+            </div>
             <div>
               <LinkStyled to={"/visit"}>Visit</LinkStyled>
               <LinkStyled to={"/collections"}>Collections</LinkStyled>
