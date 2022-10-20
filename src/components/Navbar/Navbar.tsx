@@ -32,12 +32,12 @@ function Navbar(props: Props) {
     <>
       <CssBaseline />
       <HideOnScroll {...props}>
-        <AppBar>
+        <AppBar sx={{ bgcolor: "#fff" }}>
           <Toolbar
             sx={{ justifyContent: "space-between", alignItems: "center" }}
           >
             <div>
-              <BeachAccessSharpIcon style={{ fontSize: 34 }} />
+              <BeachAccessSharpIcon style={{ fontSize: 34, color: "#000" }} />
             </div>
             <div>
               <LinkStyled to={"/visit"}>Visit</LinkStyled>
