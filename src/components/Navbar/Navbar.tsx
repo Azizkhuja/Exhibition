@@ -47,6 +47,11 @@ function Navbar(props: Props) {
               <LinkStyled to={"/events"}>Events</LinkStyled>
               <LinkStyled to={"/exhibitions"}>Exhibitions</LinkStyled>
               <LinkStyled to={"/learn"}>Learn</LinkStyled>
+              <Search>
+                <SearchIconWrapper>
+                  <SearchIcon />
+                </SearchIconWrapper>
+              </Search>
             </LinkContainer>
           </Toolbar>
         </AppBar>
@@ -67,5 +72,29 @@ const LinkContainer = styled("div")`
   justify-content: center;
   align-items: center;
 `;
+const Search = styled("div")(({ theme }) => ({
+  position: "relative",
+  borderRadius: theme.shape.borderRadius,
+  backgroundColor: alpha(theme.palette.common.black, 0.8),
+  "&:hover": {
+    backgroundColor: alpha(theme.palette.common.black, 0.9),
+  },
+  marginLeft: 0,
+  width: "100%",
+  [theme.breakpoints.up("sm")]: {
+    marginLeft: theme.spacing(1),
+    width: "auto",
+  },
+}));
+
+const SearchIconWrapper = styled("div")(({ theme }) => ({
+  padding: theme.spacing(0, 2),
+  height: "100%",
+  position: "absolute",
+  pointerEvents: "none",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+}));
 
 export default Navbar;
