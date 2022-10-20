@@ -57,6 +57,8 @@ function Navbar(props: Props) {
 const LinkStyled = styled(Link)`
   margin-right: 5px;
   margin-left: 5px;
+  color: #000;
+  text-decoration: none;
 `;
 
 export default Navbar;
