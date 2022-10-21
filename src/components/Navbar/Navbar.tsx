@@ -11,8 +11,6 @@ import {
 } from "@mui/material";
 import BeachAccessSharpIcon from "@mui/icons-material/BeachAccessSharp";
 import SearchIcon from "@mui/icons-material/Search";
-import { flexbox } from "@mui/system";
-
 interface Props {
   window?: () => Window;
   children: any;
