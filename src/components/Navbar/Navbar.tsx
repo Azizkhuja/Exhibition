@@ -7,9 +7,11 @@ import {
   useScrollTrigger,
   InputBase,
   CssBaseline,
+  Typography,
 } from "@mui/material";
 import BeachAccessSharpIcon from "@mui/icons-material/BeachAccessSharp";
 import SearchIcon from "@mui/icons-material/Search";
+import { flexbox } from "@mui/system";
 
 interface Props {
   window?: () => Window;
@@ -38,9 +40,17 @@ function Navbar(props: Props) {
           <Toolbar
             sx={{ justifyContent: "space-between", alignItems: "center" }}
           >
-            <div>
-              <BeachAccessSharpIcon style={{ fontSize: 34, color: "#000" }} />
-            </div>
+            <LinkStyled to={"/"}>
+              <Typography
+                variant="h6"
+                sx={{ display: "flex", alignItems: "center" }}
+              >
+                <BeachAccessSharpIcon
+                  style={{ fontSize: 34, marginRight: 5 }}
+                />
+                iPro Exhibitions
+              </Typography>
+            </LinkStyled>
             <LinkContainer>
               <LinkStyled to={"/visit"}>Visit</LinkStyled>
               <LinkStyled to={"/collections"}>Collections</LinkStyled>
