@@ -5,11 +5,11 @@ import {
   Toolbar,
   Slide,
   useScrollTrigger,
+  InputBase,
   CssBaseline,
 } from "@mui/material";
 import BeachAccessSharpIcon from "@mui/icons-material/BeachAccessSharp";
 import SearchIcon from "@mui/icons-material/Search";
-import InputBase from "@mui/material/InputBase";
 
 interface Props {
   window?: () => Window;
