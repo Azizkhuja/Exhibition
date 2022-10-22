@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const Main = () => {
   return (
     <Container sx={{ marginTop: 5 }}>
-      <ImageList variant="woven" cols={3} gap={8}>
+      <ImageList variant="woven" cols={3} gap={8} sx={{ overflow: "hidden" }}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
             <img
