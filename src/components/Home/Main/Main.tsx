@@ -5,7 +5,16 @@ import ImageListItemBar from "@mui/material/ImageListItemBar";
 
 const Main = () => {
   return (
-    
+    <Box>
+      <ImageList variant="masonry" cols={3} gap={8}>
+        {itemData.map((item) => (
+          <ImageListItem key={item.img}>
+            <ImageListItemBar position="below" title={item.author} />
+          </ImageListItem>
+        ))}
+      </ImageList>
+    </Box>
+  );
 };
 
 const itemData = [
