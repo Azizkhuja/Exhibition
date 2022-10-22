@@ -1,25 +1,28 @@
-import { Box, ImageList, ImageListItem, ImageListItemBar } from "@mui/material";
+import styled from "styled-components";
+import {
+  Container,
+  ImageList,
+  ImageListItem,
+  ImageListItemBar,
+} from "@mui/material";
 import { Link } from "react-router-dom";
 
 const Main = () => {
   return (
-    <Box>
-      <Link to="/visit">
-        <ImageList variant="woven" cols={3} gap={8}>
-          {itemData.map((item) => (
-            <ImageListItem key={item.img}>
-              <img
-                src={`${item.img}?w=248&fit=crop&auto=format`}
-                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                alt={item.title}
-                loading="lazy"
-              />
-              <ImageListItemBar position="below" title={item.author} />
-            </ImageListItem>
-          ))}
-        </ImageList>
-      </Link>
-    </Box>
+    <Container sx={{ marginTop: 5 }}>
+      <ImageList variant="woven" cols={3} gap={8}>
+        {itemData.map((item) => (
+          <ImageListItem key={item.img}>
+            <img
+              src={`${item.img}?w=248&fit=crop&auto=format`}
+              srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+              alt={item.title}
+              loading="lazy"
+            />
+          </ImageListItem>
+        ))}
+      </ImageList>
+    </Container>
   );
 };
 
@@ -70,5 +73,10 @@ const itemData = [
     author: "Jen P.",
   },
 ];
+
+const ImageListTitle = styled(ImageListItemBar)`
+  color: #000;
+  text-decoration: none;
+`;
 
 export default Main;
