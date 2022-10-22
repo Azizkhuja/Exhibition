@@ -19,6 +19,9 @@ const Main = () => {
               alt={item.title}
               loading="lazy"
             />
+            <Link to="/visit">
+              <ImageListTitle position="below" title={item.author} />
+            </Link>
           </ImageListItem>
         ))}
       </ImageList>
