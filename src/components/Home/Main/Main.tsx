@@ -6,7 +6,7 @@ import ImageListItemBar from "@mui/material/ImageListItemBar";
 const Main = () => {
   return (
     <Box>
-      <ImageList variant="masonry" cols={3} gap={8}>
+      <ImageList variant="woven" cols={3} gap={8}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
             <img
@@ -68,21 +68,6 @@ const itemData = [
     img: "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7",
     title: "Coffee",
     author: "Jen P.",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1516455207990-7a41ce80f7ee",
-    title: "Storage",
-    author: "Douglas Sheppard",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62",
-    title: "Candle",
-    author: "Fi Bell",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4",
-    title: "Coffee table",
-    author: "Hutomo Abrianto",
   },
 ];
 
