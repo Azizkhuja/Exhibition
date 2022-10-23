@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const Main = () => {
   return (
     <Container sx={{ marginTop: 5, marginBottom: 20 }}>
-      <ImageList variant="woven" cols={3} gap={8} sx={{ height: 600 }}>
+      <ImageList variant="woven" cols={3} gap={8} sx={{ height: 650 }}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
             <img
@@ -59,36 +59,6 @@ const itemData = [
     img: "https://images.unsplash.com/photo-1574180045827-681f8a1a9622",
     title: "Chairs",
     author: "Taylor Simpson",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1530731141654-5993c3016c77",
-    title: "Laptop",
-    author: "Ben Kolde",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1481277542470-605612bd2d61",
-    title: "Doors",
-    author: "Philipp Berndt",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7",
-    title: "Coffee",
-    author: "Jen P.",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1530731141654-5993c3016c77",
-    title: "Laptop",
-    author: "Ben Kolde",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1481277542470-605612bd2d61",
-    title: "Doors",
-    author: "Philipp Berndt",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7",
-    title: "Coffee",
-    author: "Jen P.",
   },
   {
     img: "https://images.unsplash.com/photo-1530731141654-5993c3016c77",
