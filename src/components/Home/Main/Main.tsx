@@ -19,9 +19,9 @@ const Main = () => {
               alt={item.title}
               loading="lazy"
             />
-            <Link to="/visit">
-              <ImageListTitle position="below" title={item.author} />
-            </Link>
+            <ImageListTitle to="/visit">
+              <ImageListItemBar position="below" title={item.author} />
+            </ImageListTitle>
           </ImageListItem>
         ))}
       </ImageList>
@@ -77,9 +77,27 @@ const itemData = [
   },
 ];
 
-const ImageListTitle = styled(ImageListItemBar)`
+const ImageListTitle = styled(Link)`
   color: #000;
   text-decoration: none;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 0.1em;
+    background-color: #000;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+  }
 `;
 
 export default Main;
