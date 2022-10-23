@@ -19,9 +19,9 @@ const Main = () => {
               alt={item.title}
               loading="lazy"
             />
-            <ImageListTitle to="/visit">
-              <ImageListItemBar position="below" title={item.author} />
-            </ImageListTitle>
+            <ImageListTitleLink to="/visit">
+              <ImageListTitle position="below" title={item.author} />
+            </ImageListTitleLink>
           </ImageListItem>
         ))}
       </ImageList>
@@ -77,7 +77,7 @@ const itemData = [
   },
 ];
 
-const ImageListTitle = styled(Link)`
+const ImageListTitleLink = styled(Link)`
   color: #000;
   text-decoration: none;
   position: relative;
@@ -85,7 +85,7 @@ const ImageListTitle = styled(Link)`
     content: "";
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 25%;
     width: 50%;
     height: 0.1em;
     background-color: #000;
@@ -98,6 +98,11 @@ const ImageListTitle = styled(Link)`
     opacity: 1;
     transform: translate3d(0, 0.2em, 0);
   }
+`;
+const ImageListTitle = styled(ImageListItemBar)`
+  margin-top: 6px;
+  text-align: center;
+  text-transform: uppercase;
 `;
 
 export default Main;
