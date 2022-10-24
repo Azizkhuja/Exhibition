@@ -52,22 +52,26 @@ function Navbar(props: Props) {
                 iPro Exhibitions
               </Typography>
             </LinkStyled>
-            <LinkContainer>
-              <LinkStyled to={"/visit"}>Visit</LinkStyled>
-              <LinkStyled to={"/collections"}>Collections</LinkStyled>
-              <LinkStyled to={"/events"}>Events</LinkStyled>
-              <LinkStyled to={"/exhibitions"}>Exhibitions</LinkStyled>
-              <LinkStyled to={"/learn"}>Learn</LinkStyled>
-              <Search>
-                <SearchIconWrapper>
-                  <SearchIcon />
-                </SearchIconWrapper>
-                <StyledInputBase
-                  placeholder="Search…"
-                  inputProps={{ "aria-label": "search" }}
-                />
-              </Search>
-            </LinkContainer>
+            {belowMdSize ? (
+              <MenuIcon />
+            ) : (
+              <LinkContainer>
+                <LinkStyled to={"/visit"}>Visit</LinkStyled>
+                <LinkStyled to={"/collections"}>Collections</LinkStyled>
+                <LinkStyled to={"/events"}>Events</LinkStyled>
+                <LinkStyled to={"/exhibitions"}>Exhibitions</LinkStyled>
+                <LinkStyled to={"/learn"}>Learn</LinkStyled>
+                <Search>
+                  <SearchIconWrapper>
+                    <SearchIcon />
+                  </SearchIconWrapper>
+                  <StyledInputBase
+                    placeholder="Search…"
+                    inputProps={{ "aria-label": "search" }}
+                  />
+                </Search>
+              </LinkContainer>
+            )}
           </Toolbar>
         </AppBar>
       </HideOnScroll>
