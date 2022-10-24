@@ -11,6 +11,7 @@ import {
   Typography,
 } from "@mui/material";
 import BeachAccessSharpIcon from "@mui/icons-material/BeachAccessSharp";
+import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 interface Props {
   window?: () => Window;
