@@ -9,7 +9,8 @@ import {
 } from "@mui/material";
 
 const Main = () => {
-  const belowSmSize = useMediaQuery("(max-width:600px)");
+  const belowSmSize = useMediaQuery("(min-width:600px)");
+  const belowXsSize = useMediaQuery("(max-width:400px)");
   return (
     <Container sx={{ marginTop: 5, marginBottom: 20 }}>
       <ImageList variant="woven" cols={3} gap={8} sx={{ height: 650 }}>
