@@ -13,7 +13,12 @@ const Main = () => {
   const belowXsSize = useMediaQuery("(max-width:400px)");
   return (
     <Container sx={{ marginTop: 5, marginBottom: 20 }}>
-      <ImageList variant="woven" cols={3} gap={8} sx={{ height: 650 }}>
+      <ImageList
+        variant="woven"
+        cols={belowXsSize ? 1 : belowSmSize ? 3 : 2}
+        gap={8}
+        sx={{ height: 650 }}
+      >
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
             <img
