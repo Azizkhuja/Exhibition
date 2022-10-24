@@ -12,7 +12,7 @@ const Main = () => {
   const belowSmSize = useMediaQuery("(min-width:600px)");
   const belowXsSize = useMediaQuery("(max-width:400px)");
   return (
-    <Container sx={{ marginTop: 5, marginBottom: 20 }}>
+    <Container sx={{ marginTop: 5, marginBottom: 5 }}>
       <ImageList
         variant="woven"
         cols={belowXsSize ? 1 : belowSmSize ? 3 : 2}
