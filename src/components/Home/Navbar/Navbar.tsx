@@ -53,7 +53,7 @@ function Navbar(props: Props) {
               </Typography>
             </LinkStyled>
             {belowMdSize ? (
-              <MenuIcon />
+              <MenuIcon style={{ fontSize: 34, color: "#000" }} />
             ) : (
               <LinkContainer>
                 <LinkStyled to={"/visit"}>Visit</LinkStyled>
