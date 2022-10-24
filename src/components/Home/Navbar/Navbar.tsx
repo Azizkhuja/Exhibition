@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { alpha, styled } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import {
   AppBar,
   Toolbar,
@@ -30,6 +31,7 @@ function HideOnScroll(props: Props) {
 }
 
 function Navbar(props: Props) {
+  const belowMdSize = useMediaQuery("(max-width:900px)");
   return (
     <>
       <CssBaseline />
