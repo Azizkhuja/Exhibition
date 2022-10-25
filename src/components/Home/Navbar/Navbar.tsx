@@ -35,6 +35,8 @@ function HideOnScroll(props: Props) {
 
 function Navbar(props: Props) {
   const belowMdSize = useMediaQuery("(max-width:900px)");
+  const [open, setOpen] = useState(false);
+
   return (
     <>
       <CssBaseline />
