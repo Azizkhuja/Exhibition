@@ -37,6 +37,10 @@ function Navbar(props: Props) {
   const belowMdSize = useMediaQuery("(max-width:900px)");
   const [open, setOpen] = useState(false);
 
+  const toggleDrawer = (newOpen: boolean) => () => {
+    setOpen(newOpen);
+  };
+
   return (
     <>
       <CssBaseline />
