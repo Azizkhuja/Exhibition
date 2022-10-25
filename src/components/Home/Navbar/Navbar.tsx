@@ -61,10 +61,18 @@ function Navbar(props: Props) {
               </Typography>
             </LinkStyled>
             {belowMdSize ? (
-              <MenuIcon
-                onClick={toggleDrawer(true)}
-                style={{ fontSize: 34, color: "#000" }}
-              />
+              <>
+                <MenuIcon
+                  onClick={toggleDrawer(true)}
+                  style={{ fontSize: 34, color: "#000" }}
+                />
+                <SwipeableDrawer
+                  anchor="left"
+                  open={open}
+                  onClose={toggleDrawer(false)}
+                  onOpen={toggleDrawer(true)}
+                ></SwipeableDrawer>
+              </>
             ) : (
               <LinkContainer>
                 <LinkStyled to={"/visit"}>Visit</LinkStyled>
