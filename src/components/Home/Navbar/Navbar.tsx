@@ -71,7 +71,24 @@ function Navbar(props: Props) {
                   open={open}
                   onClose={toggleDrawer(false)}
                   onOpen={toggleDrawer(true)}
-                ></SwipeableDrawer>
+                >
+                  <LinkContainer>
+                    <LinkStyled to={"/visit"}>Visit</LinkStyled>
+                    <LinkStyled to={"/collections"}>Collections</LinkStyled>
+                    <LinkStyled to={"/events"}>Events</LinkStyled>
+                    <LinkStyled to={"/exhibitions"}>Exhibitions</LinkStyled>
+                    <LinkStyled to={"/learn"}>Learn</LinkStyled>
+                    <Search>
+                      <SearchIconWrapper>
+                        <SearchIcon />
+                      </SearchIconWrapper>
+                      <StyledInputBase
+                        placeholder="Search…"
+                        inputProps={{ "aria-label": "search" }}
+                      />
+                    </Search>
+                  </LinkContainer>
+                </SwipeableDrawer>
               </>
             ) : (
               <LinkContainer>
