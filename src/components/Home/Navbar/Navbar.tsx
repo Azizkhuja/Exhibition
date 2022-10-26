@@ -74,11 +74,11 @@ function Navbar(props: Props) {
                   swipeAreaWidth={20}
                 >
                   <LinkContainerMdSize>
-                    <LinkStyled to={"/visit"}>Visit</LinkStyled>
-                    <LinkStyled to={"/collections"}>Collections</LinkStyled>
-                    <LinkStyled to={"/events"}>Events</LinkStyled>
-                    <LinkStyled to={"/exhibitions"}>Exhibitions</LinkStyled>
-                    <LinkStyled to={"/learn"}>Learn</LinkStyled>
+                    <LinkStyledMd to={"/visit"}>Visit</LinkStyledMd>
+                    <LinkStyledMd to={"/collections"}>Collections</LinkStyledMd>
+                    <LinkStyledMd to={"/events"}>Events</LinkStyledMd>
+                    <LinkStyledMd to={"/exhibitions"}>Exhibitions</LinkStyledMd>
+                    <LinkStyledMd to={"/learn"}>Learn</LinkStyledMd>
                   </LinkContainerMdSize>
                 </SwipeableDrawer>
               </>
@@ -124,6 +124,8 @@ const LinkContainerMdSize = styled("div")`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
+  height: 100vh;
 `;
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
