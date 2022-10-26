@@ -79,15 +79,6 @@ function Navbar(props: Props) {
                     <LinkStyled to={"/events"}>Events</LinkStyled>
                     <LinkStyled to={"/exhibitions"}>Exhibitions</LinkStyled>
                     <LinkStyled to={"/learn"}>Learn</LinkStyled>
-                    <Search>
-                      <SearchIconWrapper>
-                        <SearchIcon />
-                      </SearchIconWrapper>
-                      <StyledInputBase
-                        placeholder="Search…"
-                        inputProps={{ "aria-label": "search" }}
-                      />
-                    </Search>
                   </LinkContainerMdSize>
                 </SwipeableDrawer>
               </>
