@@ -71,8 +71,9 @@ function Navbar(props: Props) {
                   open={open}
                   onClose={toggleDrawer(false)}
                   onOpen={toggleDrawer(true)}
+                  swipeAreaWidth={20}
                 >
-                  <LinkContainer>
+                  <LinkContainerMdSize>
                     <LinkStyled to={"/visit"}>Visit</LinkStyled>
                     <LinkStyled to={"/collections"}>Collections</LinkStyled>
                     <LinkStyled to={"/events"}>Events</LinkStyled>
@@ -87,7 +88,7 @@ function Navbar(props: Props) {
                         inputProps={{ "aria-label": "search" }}
                       />
                     </Search>
-                  </LinkContainer>
+                  </LinkContainerMdSize>
                 </SwipeableDrawer>
               </>
             ) : (
@@ -124,6 +125,12 @@ const LinkStyled = styled(Link)`
 `;
 const LinkContainer = styled("div")`
   display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+const LinkContainerMdSize = styled("div")`
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
