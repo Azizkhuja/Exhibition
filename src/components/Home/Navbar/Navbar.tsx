@@ -126,6 +126,7 @@ const LinkContainerMdSize = styled("div")`
   align-items: center;
   padding: 10px;
   height: 100vh;
+  width: 220px;
 `;
 const LinkStyledMd = styled(Link)`
   margin: 20px 5px;
