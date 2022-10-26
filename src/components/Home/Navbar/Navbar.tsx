@@ -127,6 +127,11 @@ const LinkContainerMdSize = styled("div")`
   padding: 10px;
   height: 100vh;
 `;
+const LinkStyledMd = styled(Link)`
+  margin: 20px 5px;
+  color: #000;
+  text-decoration: none;
+`;
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
   borderRadius: theme.shape.borderRadius,
