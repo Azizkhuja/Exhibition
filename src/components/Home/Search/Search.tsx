@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Container, Typography } from "@mui/material";
+import TextField from "@mui/material/TextField";
 
 const Search = () => {
   return (
@@ -9,6 +10,12 @@ const Search = () => {
         <NameUnderline>Busch-Reisinger</NameUnderline>, and{" "}
         <NameUnderline>Arthur M. Sackler</NameUnderline> Museums
       </Typography>
+      <TextField
+        sx={{ width: "100%" }}
+        id="outlined-search"
+        label="Search field"
+        type="search"
+      />
     </Container>
   );
 };
