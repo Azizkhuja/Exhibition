@@ -1,5 +1,11 @@
+import { Container, Typography } from "@mui/material";
+
 const Search = () => {
-  return <div>Search</div>;
+  return (
+    <Container>
+      <Typography>Search</Typography>
+    </Container>
+  );
 };
 
 export default Search;
