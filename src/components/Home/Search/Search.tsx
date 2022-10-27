@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { Container, Typography } from "@mui/material";
-import TextField from "@mui/material/TextField";
+import { Container, Typography, TextField } from "@mui/material";
 
 const Search = () => {
   return (
