@@ -10,7 +10,7 @@ const Search = () => {
         <NameUnderline>Arthur M. Sackler</NameUnderline> Museums
       </Typography>
       <TextField
-        sx={{ width: "100%" }}
+        fullWidth={true}
         id="outlined-search"
         label="Gallery Number, Artist, Keyword, Title"
         type="search"
