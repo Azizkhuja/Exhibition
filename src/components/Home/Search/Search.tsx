@@ -12,7 +12,7 @@ const Search = () => {
       <TextField
         fullWidth={true}
         id="outlined-search"
-        label="Gallery Number, Artist, Keyword, Title"
+        label="Search for Gallery Number, Artist, Keyword, Title"
         type="search"
       />
     </Container>
