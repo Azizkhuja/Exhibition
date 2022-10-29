@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Container, Typography, TextField, Divider } from "@mui/material";
+import SearchLists from "./SearchLists";
 
 const Search = () => {
   return (
@@ -15,6 +16,7 @@ const Search = () => {
         label="Search for Gallery Number, Artist, Keyword, Title"
         type="search"
       />
+      <SearchLists />
       <Divider sx={{ marginTop: 6 }} />
     </Container>
   );
