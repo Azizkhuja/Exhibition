@@ -18,11 +18,6 @@ const SearchLists = () => {
       </ListItem>
       <ListItem>
         <ListItemButton>
-          <ListItemText primary="Technique / Medium" />
-        </ListItemButton>
-      </ListItem>
-      <ListItem>
-        <ListItemButton>
           <ListItemText primary="Period" />
         </ListItemButton>
       </ListItem>
