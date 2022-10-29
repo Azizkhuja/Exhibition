@@ -5,7 +5,7 @@ import ListItemText from "@mui/material/ListItemText";
 
 const SearchLists = () => {
   return (
-    <List>
+    <List sx={{ display: "flex" }}>
       <ListItem>
         <ListItemButton>
           <ListItemText primary="Classification" />
