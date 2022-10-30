@@ -1,7 +1,6 @@
-import { ListItemButton } from "@mui/material";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemText from "@mui/material/ListItemText";
+import { ListItemButton, List, ListItem, ListItemText } from "@mui/material";
+
+// Refactor list and import above
 
 const SearchLists = () => {
   return (
