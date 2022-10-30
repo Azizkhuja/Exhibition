@@ -14,46 +14,13 @@ const searchTypes: string[] = [
 const SearchLists = () => {
   return (
     <List sx={{ display: "flex" }}>
-      <ListItem>
-        <ListItemButton>
-          <ListItemText primary="Classification" />
-        </ListItemButton>
-      </ListItem>
-      <ListItem>
-        <ListItemButton>
-          <ListItemText primary="Work Type" />
-        </ListItemButton>
-      </ListItem>
-      <ListItem>
-        <ListItemButton>
-          <ListItemText primary="Period" />
-        </ListItemButton>
-      </ListItem>
-      <ListItem>
-        <ListItemButton>
-          <ListItemText primary="Place" />
-        </ListItemButton>
-      </ListItem>
-      <ListItem>
-        <ListItemButton>
-          <ListItemText primary="Century" />
-        </ListItemButton>
-      </ListItem>
-      <ListItem>
-        <ListItemButton>
-          <ListItemText primary="Culture" />
-        </ListItemButton>
-      </ListItem>
-      <ListItem>
-        <ListItemButton>
-          <ListItemText primary="Gallery" />
-        </ListItemButton>
-      </ListItem>
-      <ListItem>
-        <ListItemButton>
-          <ListItemText primary="On View" />
-        </ListItemButton>
-      </ListItem>
+      {searchTypes.map((item) => (
+        <ListItem>
+          <ListItemButton>
+            <ListItemText primary={item} />
+          </ListItemButton>
+        </ListItem>
+      ))}
     </List>
   );
 };
