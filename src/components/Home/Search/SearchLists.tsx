@@ -1,6 +1,6 @@
 import { ListItemButton, List, ListItem, ListItemText } from "@mui/material";
 
-enum Data {
+enum SearchType {
   Classification = "Classification",
   WorkType = "Work Type",
   Period = "Period",
@@ -13,7 +13,7 @@ enum Data {
 const SearchLists = () => {
   return (
     <List sx={{ display: "flex" }}>
-      {Object.values(Data).map((item) => (
+      {Object.values(SearchType).map((item) => (
         <ListItem>
           <ListItemButton>
             <ListItemText primary={item} />
