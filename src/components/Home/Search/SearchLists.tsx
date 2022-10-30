@@ -13,7 +13,7 @@ enum Data {
 const SearchLists = () => {
   return (
     <List sx={{ display: "flex" }}>
-      {searchTypes.map((item) => (
+      {Object.values(Data).map((item) => (
         <ListItem>
           <ListItemButton>
             <ListItemText primary={item} />
