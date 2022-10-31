@@ -6,10 +6,11 @@ import SearchLists from "./SearchLists";
 
 const Search = () => {
   const belowMdSize = useMediaQuery("(max-width:900px)");
+  const belowXsSize = useMediaQuery("(max-width:400px)");
   return (
     <Container>
       <Typography
-        variant={belowMdSize ? "h4" : "h3"}
+        variant={belowXsSize ? "h5" : belowMdSize ? "h4" : "h3"}
         my={6}
         sx={{ textAlign: "center" }}
       >
