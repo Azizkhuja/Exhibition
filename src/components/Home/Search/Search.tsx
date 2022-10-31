@@ -1,8 +1,11 @@
 import styled from "styled-components";
 import { Container, Typography, TextField, Divider } from "@mui/material";
+import useMediaQuery from "@mui/material/useMediaQuery";
+
 import SearchLists from "./SearchLists";
 
 const Search = () => {
+  const belowMdSize = useMediaQuery("(max-width:900px)");
   return (
     <Container>
       <Typography variant="h3" my={6} sx={{ textAlign: "center" }}>
