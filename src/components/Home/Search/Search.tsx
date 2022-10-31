@@ -11,7 +11,7 @@ const Search = () => {
     <Container>
       <Typography
         variant={belowXsSize ? "h5" : belowMdSize ? "h4" : "h3"}
-        my={6}
+        my={belowMdSize ? 3 : 6}
         sx={{ textAlign: "center" }}
       >
         The Harvard Art Museums — the <NameUnderline>Fogg</NameUnderline>,
