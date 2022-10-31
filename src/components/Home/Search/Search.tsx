@@ -8,7 +8,11 @@ const Search = () => {
   const belowMdSize = useMediaQuery("(max-width:900px)");
   return (
     <Container>
-      <Typography variant="h3" my={6} sx={{ textAlign: "center" }}>
+      <Typography
+        variant={belowMdSize ? "h4" : "h3"}
+        my={6}
+        sx={{ textAlign: "center" }}
+      >
         The Harvard Art Museums — the <NameUnderline>Fogg</NameUnderline>,
         <NameUnderline>Busch-Reisinger</NameUnderline>, and{" "}
         <NameUnderline>Arthur M. Sackler</NameUnderline> Museums
