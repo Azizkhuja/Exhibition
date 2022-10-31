@@ -57,7 +57,7 @@ function Navbar(props: Props) {
                 <BeachAccessSharpIcon
                   style={{ fontSize: 34, marginRight: 5 }}
                 />
-                iPro Exhibitions
+                iPro Museums
               </Typography>
             </LinkStyled>
             {belowMdSize ? (
