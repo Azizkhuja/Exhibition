@@ -15,13 +15,15 @@ const SearchLists = () => {
   const belowMdSize = useMediaQuery("(max-width:900px)");
   return (
     <List sx={{ display: "flex" }}>
-      {Object.values(SearchType).map((item) => (
-        <ListItem>
-          <ListItemButton>
-            <ListItemText primary={item} />
-          </ListItemButton>
-        </ListItem>
-      ))}
+      {!belowMdSize
+        ? Object.values(SearchType).map((item) => (
+            <ListItem>
+              <ListItemButton>
+                <ListItemText primary={item} />
+              </ListItemButton>
+            </ListItem>
+          ))
+        : null}
     </List>
   );
 };
