@@ -1,5 +1,7 @@
+import { Container } from "@mui/material";
+
 const SearchMasonry = () => {
-  return <div>SearchMasonry</div>;
+  return <Container>SearchMasonry</Container>;
 };
 
 export default SearchMasonry;

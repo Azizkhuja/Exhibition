@@ -25,7 +25,7 @@ const Search = () => {
         type="search"
       />
       <SearchLists />
-      <Divider />
+      <Divider sx={{ marginBottom: 5 }} />
     </Container>
   );
 };
