@@ -19,7 +19,7 @@ const Item = styled(Paper)(({ theme }) => ({
 const SearchMasonry = () => {
   return (
     <Container>
-      <Box>
+      <Box sx={{ display: "flex", justifyContent: "center" }}>
         <Masonry columns={4} spacing={2}>
           {heights.map((height, index) => (
             <Item key={index} sx={{ height }}>
