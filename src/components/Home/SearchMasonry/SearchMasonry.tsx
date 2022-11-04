@@ -34,9 +34,9 @@ const SearchMasonry = () => {
     <Container>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <Masonry columns={belowXsSize ? 1 : belowMdSize ? 3 : 4} spacing={2}>
-          {heights.map((height, index) => (
-            <Item key={index} sx={{ height }}>
-              {index + 1}
+          {imgArray.map((itemImg, index) => (
+            <Item key={index}>
+              <img src={itemImg} alt={itemImg} />
             </Item>
           ))}
         </Masonry>
