@@ -22,7 +22,7 @@ const SearchMasonry = () => {
   return (
     <Container>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
-        <Masonry columns={4} spacing={2}>
+        <Masonry columns={belowXsSize ? 1 : belowMdSize ? 3 : 4} spacing={2}>
           {heights.map((height, index) => (
             <Item key={index} sx={{ height }}>
               {index + 1}
