@@ -16,8 +16,8 @@ const SearchLists = () => {
   return (
     <List sx={{ display: "flex" }}>
       {!belowMdSize
-        ? Object.values(SearchType).map((item) => (
-            <ListItem>
+        ? Object.values(SearchType).map((item, index) => (
+            <ListItem key={index}>
               <ListItemButton>
                 <ListItemText primary={item} />
               </ListItemButton>
