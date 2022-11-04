@@ -1,6 +1,7 @@
 import { styled } from "@mui/material/styles";
 import { Container, Paper, Box } from "@mui/material";
 import Masonry from "@mui/lab/Masonry";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const heights = [
   150, 30, 90, 70, 110, 150, 130, 80, 50, 90, 100, 150, 30, 50, 80,
@@ -15,6 +16,9 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const SearchMasonry = () => {
+  const belowMdSize = useMediaQuery("(max-width:900px)");
+  const belowXsSize = useMediaQuery("(max-width:400px)");
+
   return (
     <Container>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
