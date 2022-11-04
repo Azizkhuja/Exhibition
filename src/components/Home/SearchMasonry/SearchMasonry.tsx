@@ -36,7 +36,7 @@ const SearchMasonry = () => {
         <Masonry columns={belowXsSize ? 1 : belowMdSize ? 3 : 4} spacing={2}>
           {imgArray.map((itemImg, index) => (
             <Item key={index}>
-              <img src={itemImg} alt={itemImg} />
+              <img src={itemImg} alt={itemImg} style={{ width: "100%" }} />
             </Item>
           ))}
         </Masonry>
