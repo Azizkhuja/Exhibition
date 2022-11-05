@@ -53,7 +53,7 @@ const SearchMasonry = () => {
           ))}
         </Masonry>
       </Box>
-      <Box sx={{ display: "flex", justifyContent: "center", marginTop: 5 }}>
+      <Box my={5} sx={{ display: "flex", justifyContent: "center" }}>
         <LoadMoreButton variant="outlined">Load More</LoadMoreButton>
       </Box>
     </Container>
@@ -68,6 +68,7 @@ const LoadMoreButton = styled(Button)`
     padding-right: 30px;
     border: 2px solid #000;
     border-radius: 0;
+    transition: all 0.5s;
 
     &:hover {
       background-color: #000;
