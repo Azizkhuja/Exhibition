@@ -54,10 +54,26 @@ const SearchMasonry = () => {
         </Masonry>
       </Box>
       <Box sx={{ display: "flex", justifyContent: "center", marginTop: 5 }}>
-        <Button variant="outlined">Load More</Button>
+        <LoadMoreButton variant="outlined">Load More</LoadMoreButton>
       </Box>
     </Container>
   );
 };
+
+const LoadMoreButton = styled(Button)`
+  && {
+    font-size: 18px;
+    color: #000;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 2px solid #000;
+    border-radius: 0;
+
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+`;
 
 export default SearchMasonry;
