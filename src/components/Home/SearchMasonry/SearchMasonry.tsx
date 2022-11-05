@@ -68,7 +68,7 @@ const LoadMoreButton = styled(Button)`
     padding-right: 30px;
     border: 2px solid #000;
     border-radius: 0;
-    transition: all 0.5s;
+    transition: all 0.6s;
 
     &:hover {
       background-color: #000;
