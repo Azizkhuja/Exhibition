@@ -2,6 +2,7 @@ import { styled } from "@mui/material/styles";
 import { Container, Paper, Box } from "@mui/material";
 import Masonry from "@mui/lab/Masonry";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import Button from "@mui/material/Button";
 
 const imgArray = [
   "https://images.pexels.com/photos/3246665/pexels-photo-3246665.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -52,6 +53,7 @@ const SearchMasonry = () => {
           ))}
         </Masonry>
       </Box>
+      <Button variant="outlined">Outlined</Button>
     </Container>
   );
 };
