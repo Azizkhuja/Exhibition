@@ -53,7 +53,7 @@ const SearchMasonry = () => {
           ))}
         </Masonry>
       </Box>
-      <Button variant="outlined">Outlined</Button>
+      <Button variant="outlined">Load More</Button>
     </Container>
   );
 };
