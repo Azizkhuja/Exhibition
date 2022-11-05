@@ -53,7 +53,9 @@ const SearchMasonry = () => {
           ))}
         </Masonry>
       </Box>
-      <Button variant="outlined">Load More</Button>
+      <Box sx={{ display: "flex", justifyContent: "center" }}>
+        <Button variant="outlined">Load More</Button>
+      </Box>
     </Container>
   );
 };
