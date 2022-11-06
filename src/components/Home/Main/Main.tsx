@@ -19,7 +19,11 @@ const Main = () => {
   const belowXsSize = useMediaQuery("(max-width:400px)");
   return (
     <Container sx={{ marginTop: 5, marginBottom: 5 }}>
-      <Masonry columns={belowXsSize ? 1 : 2} spacing={2}></Masonry>
+      <Masonry columns={belowXsSize ? 1 : 2} spacing={2}>
+      {itemData.map((itemImg, index) => (
+          
+        ))}
+      </Masonry>
       {/* <ImageList
         variant="woven"
         cols={belowXsSize ? 1 : belowSmSize ? 3 : 2}
