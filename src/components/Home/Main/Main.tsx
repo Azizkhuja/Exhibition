@@ -8,6 +8,7 @@ import {
   ImageListItemBar,
   Paper,
 } from "@mui/material";
+import { Masonry } from "@mui/lab";
 
 const Item = styled(Paper)(({ theme }) => ({
   textAlign: "center",
@@ -18,7 +19,8 @@ const Main = () => {
   const belowXsSize = useMediaQuery("(max-width:400px)");
   return (
     <Container sx={{ marginTop: 5, marginBottom: 5 }}>
-      <ImageList
+      <Masonry columns={belowXsSize ? 1 : 2} spacing={2}></Masonry>
+      {/* <ImageList
         variant="woven"
         cols={belowXsSize ? 1 : belowSmSize ? 3 : 2}
         gap={8}
@@ -37,7 +39,7 @@ const Main = () => {
             </ImageListTitleLink>
           </ImageListItem>
         ))}
-      </ImageList>
+      </ImageList> */}
     </Container>
   );
 };
