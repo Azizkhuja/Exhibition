@@ -6,7 +6,12 @@ import {
   ImageList,
   ImageListItem,
   ImageListItemBar,
+  Paper,
 } from "@mui/material";
+
+const Item = styled(Paper)(({ theme }) => ({
+  textAlign: "center",
+}));
 
 const Main = () => {
   const belowSmSize = useMediaQuery("(min-width:600px)");
@@ -28,7 +33,7 @@ const Main = () => {
               loading="lazy"
             />
             <ImageListTitleLink to="/visit">
-              <ImageListTitle position="below" title={item.author} />
+              <ImageListTitle position="below" title={item.publishedData} />
             </ImageListTitleLink>
           </ImageListItem>
         ))}
