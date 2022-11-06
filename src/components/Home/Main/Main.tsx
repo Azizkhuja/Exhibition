@@ -40,48 +40,48 @@ const Main = () => {
 const itemData = [
   {
     img: "https://images.unsplash.com/photo-1549388604-817d15aa0110",
-    title: "Bed",
-    author: "swabdesign",
+    title: "A Colloquium in the Visual Arts",
+    publishedData: "August 27, 2022–December 30, 2022",
   },
   {
     img: "https://images.unsplash.com/photo-1525097487452-6278ff080c31",
-    title: "Books",
-    author: "Pavel Nekoranec",
+    title: "Funerary Portraits from Roman Egypt: Facing Forward",
+    publishedData: "August 27, 2022–December 30, 2022",
   },
   {
     img: "https://images.unsplash.com/photo-1523413651479-597eb2da0ad6",
-    title: "Sink",
-    author: "Charles Deluvio",
+    title: "Dare to Know: Prints and Drawings in the Age of Enlightenment",
+    publishedData: "August 27, 2022–December 30, 2022",
   },
   {
     img: "https://images.unsplash.com/photo-1563298723-dcfebaa392e3",
     title: "Kitchen",
-    author: "Christian Mackie",
+    publishedData: "August 27, 2022–December 30, 2022",
   },
   {
     img: "https://images.unsplash.com/photo-1588436706487-9d55d73a39e3",
     title: "Blinds",
-    author: "Darren Richardson",
+    publishedData: "August 27, 2022–December 30, 2022",
   },
   {
     img: "https://images.unsplash.com/photo-1574180045827-681f8a1a9622",
     title: "Chairs",
-    author: "Taylor Simpson",
+    publishedData: "August 27, 2022–December 30, 2022",
   },
   {
     img: "https://images.unsplash.com/photo-1530731141654-5993c3016c77",
     title: "Laptop",
-    author: "Ben Kolde",
+    publishedData: "August 27, 2022–December 30, 2022",
   },
   {
     img: "https://images.unsplash.com/photo-1481277542470-605612bd2d61",
     title: "Doors",
-    author: "Philipp Berndt",
+    publishedData: "August 27, 2022–December 30, 2022",
   },
   {
     img: "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7",
     title: "Coffee",
-    author: "Jen P.",
+    publishedData: "August 27, 2022–December 30, 2022",
   },
 ];
 
