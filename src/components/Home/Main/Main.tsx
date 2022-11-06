@@ -16,7 +16,6 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const Main = () => {
-  const belowSmSize = useMediaQuery("(min-width:600px)");
   const belowXsSize = useMediaQuery("(max-width:400px)");
   return (
     <Container sx={{ marginTop: 5, marginBottom: 5 }}>
@@ -86,33 +85,5 @@ const itemData = [
     publishedData: "August 27, 2022–December 30, 2022",
   },
 ];
-
-const ImageListTitleLink = styled(Link)`
-  color: #000;
-  text-decoration: none;
-  position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 25%;
-    width: 50%;
-    height: 0.1em;
-    background-color: #000;
-    opacity: 0;
-    transition: opacity 0.5s, transform 0.5s;
-  }
-
-  &:hover::after,
-  &:focus::after {
-    opacity: 1;
-    transform: translate3d(0, 0.2em, 0);
-  }
-`;
-const ImageListTitle = styled(ImageListItemBar)`
-  margin-top: 6px;
-  text-align: center;
-  text-transform: uppercase;
-`;
 
 export default Main;
