@@ -7,6 +7,7 @@ import {
   ImageListItem,
   ImageListItemBar,
   Paper,
+  Typography,
 } from "@mui/material";
 import { Masonry } from "@mui/lab";
 
@@ -27,6 +28,10 @@ const Main = () => {
               alt={itemImg.title}
               style={{ width: "100%" }}
             />
+            <Typography variant="caption">
+              On View, {itemImg.publishedData}
+            </Typography>
+            <Typography variant="h5">{itemImg.title}</Typography>
           </Item>
         ))}
       </Masonry>
