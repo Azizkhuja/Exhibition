@@ -9,10 +9,11 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const Main = () => {
+  const belowMdSize = useMediaQuery("(max-width:900px)");
   const belowXsSize = useMediaQuery("(max-width:400px)");
   return (
     <Container sx={{ marginTop: 5, marginBottom: 5 }}>
-      <Masonry columns={belowXsSize ? 1 : 2} spacing={2}>
+      <Masonry columns={belowXsSize ? 1 : belowMdSize ? 2 : 3} spacing={2}>
         {itemData.map((itemImg, index) => (
           <Item>
             <img
@@ -48,6 +49,16 @@ const itemData = [
     publishedData: "August 27, 2022–December 30, 2022",
   },
   {
+    img: "https://images.unsplash.com/photo-1574180045827-681f8a1a9622",
+    title: "Kitchen",
+    publishedData: "August 27, 2022–December 30, 2022",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1481277542470-605612bd2d61",
+    title: "Laptop",
+    publishedData: "August 27, 2022–December 30, 2022",
+  },
+  {
     img: "https://images.unsplash.com/photo-1563298723-dcfebaa392e3",
     title: "Kitchen",
     publishedData: "August 27, 2022–December 30, 2022",
@@ -63,18 +74,23 @@ const itemData = [
     publishedData: "August 27, 2022–December 30, 2022",
   },
   {
+    img: "https://images.unsplash.com/photo-1563298723-dcfebaa392e3",
+    title: "Lua",
+    publishedData: "August 27, 2022–December 30, 2022",
+  },
+  {
     img: "https://images.unsplash.com/photo-1530731141654-5993c3016c77",
     title: "Laptop",
     publishedData: "August 27, 2022–December 30, 2022",
   },
   {
-    img: "https://images.unsplash.com/photo-1481277542470-605612bd2d61",
-    title: "Doors",
+    img: "https://images.unsplash.com/photo-1574180045827-681f8a1a9622",
+    title: "Chairs",
     publishedData: "August 27, 2022–December 30, 2022",
   },
   {
-    img: "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7",
-    title: "Coffee",
+    img: "https://images.unsplash.com/photo-1481277542470-605612bd2d61",
+    title: "Doors",
     publishedData: "August 27, 2022–December 30, 2022",
   },
 ];
