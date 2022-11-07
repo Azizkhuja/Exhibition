@@ -1,14 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import {
-  Container,
-  ImageList,
-  ImageListItem,
-  ImageListItemBar,
-  Paper,
-  Typography,
-} from "@mui/material";
+import { Container, Paper, Typography } from "@mui/material";
 import { Masonry } from "@mui/lab";
 
 const Item = styled(Paper)(({ theme }) => ({
