@@ -15,7 +15,7 @@ const Main = () => {
     <Container sx={{ marginTop: 5, marginBottom: 5 }}>
       <Masonry columns={belowXsSize ? 1 : belowMdSize ? 2 : 3} spacing={2}>
         {itemData.map((itemImg, index) => (
-          <Item>
+          <Item key={index}>
             <img
               src={itemImg.img}
               alt={itemImg.title}
