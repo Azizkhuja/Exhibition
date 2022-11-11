@@ -1,4 +1,11 @@
-import { Container, Grid, Typography } from "@mui/material";
+import {
+  Container,
+  Grid,
+  List,
+  ListItem,
+  ListItemButton,
+  Typography,
+} from "@mui/material";
 import BeachAccessSharpIcon from "@mui/icons-material/BeachAccessSharp";
 
 const Footer = () => {
@@ -18,7 +25,24 @@ const Footer = () => {
                 iPro Museums
               </Typography>
             </Grid>
-            <Grid item>2</Grid>
+            <Grid item>
+              <Grid container>
+                <Grid item>
+                  <List>
+                    <ListItem disablePadding>
+                      <ListItemButton>Staff</ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton>Employment</ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton>www</ListItemButton>
+                    </ListItem>
+                  </List>
+                </Grid>
+                <Grid item></Grid>
+              </Grid>
+            </Grid>
           </Grid>
         </Grid>
         <Grid item md={4}>
