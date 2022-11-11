@@ -13,6 +13,7 @@ const Home = () => {
       <Divider />
       <Search />
       <SearchMasonry />
+      <Divider />
       <Box sx={{ margin: 20 }}></Box>
     </>
   );
