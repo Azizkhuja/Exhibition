@@ -1,4 +1,5 @@
 import { Container, Grid, Typography } from "@mui/material";
+import BeachAccessSharpIcon from "@mui/icons-material/BeachAccessSharp";
 
 const Footer = () => {
   return (
@@ -11,6 +12,9 @@ const Footer = () => {
                 variant="h6"
                 sx={{ display: "flex", alignItems: "center" }}
               >
+                <BeachAccessSharpIcon
+                  style={{ fontSize: 34, marginRight: 5 }}
+                />
                 iPro Museums
               </Typography>
             </Grid>
