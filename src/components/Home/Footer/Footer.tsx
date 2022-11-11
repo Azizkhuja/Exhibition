@@ -1,13 +1,19 @@
-import { Container, Grid } from "@mui/material";
+import { Container, Grid, Typography } from "@mui/material";
 
 const Footer = () => {
   return (
     <Container>
       <Grid container spacing={2}>
         <Grid item md={4}>
-          1
           <Grid container sx={{ flexDirection: "column" }}>
-            <Grid item></Grid>
+            <Grid item>
+              <Typography
+                variant="h6"
+                sx={{ display: "flex", alignItems: "center" }}
+              >
+                iPro Museums
+              </Typography>
+            </Grid>
             <Grid item>2</Grid>
           </Grid>
         </Grid>
