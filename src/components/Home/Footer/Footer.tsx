@@ -55,6 +55,11 @@ const Footer = () => {
                 </Grid>
               </Grid>
             </Grid>
+            <Grid item>
+              <Typography>
+                © 2022 President and Fellows of Harvard College
+              </Typography>
+            </Grid>
           </Grid>
         </Grid>
         <Grid item md={4}>
