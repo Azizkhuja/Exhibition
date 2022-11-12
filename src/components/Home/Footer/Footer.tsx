@@ -30,17 +30,29 @@ const Footer = () => {
                 <Grid item>
                   <List>
                     <ListItem disablePadding>
+                      <ListItemButton>About</ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton>Contact us</ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton>Press</ListItemButton>
+                    </ListItem>
+                  </List>
+                </Grid>
+                <Grid item>
+                  <List>
+                    <ListItem disablePadding>
                       <ListItemButton>Staff</ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemButton>Employment</ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
-                      <ListItemButton>www</ListItemButton>
+                      <ListItemButton>Collecting Policy</ListItemButton>
                     </ListItem>
                   </List>
                 </Grid>
-                <Grid item></Grid>
               </Grid>
             </Grid>
           </Grid>
