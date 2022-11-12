@@ -56,7 +56,7 @@ const Footer = () => {
               </Grid>
             </Grid>
             <Grid item>
-              <Typography>
+              <Typography variant="caption" sx={{ color: "grey" }}>
                 © 2022 President and Fellows of Harvard College
               </Typography>
             </Grid>
