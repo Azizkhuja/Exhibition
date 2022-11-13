@@ -84,16 +84,16 @@ const Footer = () => {
             <Grid item sx={{ fontSize: 12 }}>
               <List>
                 <ListItem disablePadding>
-                  <ListItemButton>Terms of Use</ListItemButton>
+                  <NewsletterItem>Terms of Use</NewsletterItem>
                 </ListItem>
                 <ListItem disablePadding>
-                  <ListItemButton>Privacy Statement</ListItemButton>
+                  <NewsletterItem>Privacy Statement</NewsletterItem>
                 </ListItem>
                 <ListItem disablePadding>
-                  <ListItemButton>Digital Accessibility</ListItemButton>
+                  <NewsletterItem>Digital Accessibility</NewsletterItem>
                 </ListItem>
                 <ListItem disablePadding>
-                  <ListItemButton>FAQs</ListItemButton>
+                  <NewsletterItem>FAQs</NewsletterItem>
                 </ListItem>
               </List>
             </Grid>
@@ -123,6 +123,9 @@ const Newsletter = styled(Button)`
       color: #c1c1c1;
     }
   }
+`;
+const NewsletterItem = styled(ListItemButton)`
+  padding: 1px;
 `;
 
 export default Footer;
