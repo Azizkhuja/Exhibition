@@ -8,6 +8,8 @@ import {
   ListItemButton,
   Typography,
 } from "@mui/material";
+
+// Icons
 import BeachAccessSharpIcon from "@mui/icons-material/BeachAccessSharp";
 
 const Footer = () => {
@@ -94,6 +96,22 @@ const Footer = () => {
                 </ListItem>
                 <ListItem disablePadding>
                   <NewsletterItem>FAQs</NewsletterItem>
+                </ListItem>
+              </List>
+            </Grid>
+            <Grid item>
+              <List sx={{ display: "flex", padding: 0 }}>
+                <ListItem>
+                  <GitHubIcon />
+                </ListItem>
+                <ListItem>
+                  <LanguageIcon />
+                </ListItem>
+                <ListItem>
+                  <TwitterIcon />
+                </ListItem>
+                <ListItem>
+                  <LinkedInIcon />
                 </ListItem>
               </List>
             </Grid>
