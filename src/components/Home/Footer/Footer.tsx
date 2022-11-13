@@ -1,3 +1,4 @@
+import { styled } from "@mui/material/styles";
 import {
   Button,
   Container,
@@ -66,7 +67,7 @@ const Footer = () => {
         <Grid item md={4}>
           <Grid container>
             <Grid item>
-              <Button>Newsletter</Button>
+              <Newsletter>Newsletter</Newsletter>
               <Typography>Sign up to get the latest news</Typography>
             </Grid>
           </Grid>
@@ -78,5 +79,22 @@ const Footer = () => {
     </Container>
   );
 };
+
+const Newsletter = styled(Button)`
+  && {
+    font-size: 16px;
+    color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 0;
+    transition: all 0.6s;
+    background-color: #9ca3af;
+
+    &:hover {
+      background-color: #8c929d;
+      color: #c1c1c1;
+    }
+  }
+`;
 
 export default Footer;
