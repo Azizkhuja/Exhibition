@@ -13,7 +13,7 @@ import BeachAccessSharpIcon from "@mui/icons-material/BeachAccessSharp";
 const Footer = () => {
   return (
     <Container sx={{ padding: 6 }}>
-      <Grid container spacing={2}>
+      <Grid container>
         <Grid item md={4}>
           <Grid container sx={{ flexDirection: "column" }}>
             <Grid item>
@@ -65,7 +65,7 @@ const Footer = () => {
           </Grid>
         </Grid>
         <Grid item md={4}>
-          <Grid container>
+          <Grid container sx={{ display: "flex", justifyContent: "center" }}>
             <Grid item>
               <Newsletter>Newsletter</Newsletter>
               <Typography>Sign up to get the latest news</Typography>
