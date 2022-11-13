@@ -1,4 +1,5 @@
 import {
+  Button,
   Container,
   Grid,
   List,
@@ -63,7 +64,12 @@ const Footer = () => {
           </Grid>
         </Grid>
         <Grid item md={4}>
-          2
+          <Grid container>
+            <Grid item>
+              <Button>Newsletter</Button>
+              <Typography>Sign up to get the latest news</Typography>
+            </Grid>
+          </Grid>
         </Grid>
         <Grid item md={4}>
           3
