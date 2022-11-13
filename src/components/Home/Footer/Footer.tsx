@@ -12,7 +12,7 @@ import BeachAccessSharpIcon from "@mui/icons-material/BeachAccessSharp";
 
 const Footer = () => {
   return (
-    <Container sx={{ padding: 6 }}>
+    <Container sx={{ padding: 6, color: "#9ca3b0" }}>
       <Grid container>
         <Grid item md={4}>
           <Grid container sx={{ flexDirection: "column" }}>
@@ -65,10 +65,19 @@ const Footer = () => {
           </Grid>
         </Grid>
         <Grid item md={4}>
-          <Grid container sx={{ display: "flex", justifyContent: "center" }}>
+          <Grid
+            container
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              textAlign: "center",
+            }}
+          >
             <Grid item>
               <Newsletter>Newsletter</Newsletter>
-              <Typography>Sign up to get the latest news</Typography>
+              <Typography variant="caption">
+                Sign up to get the latest news
+              </Typography>
             </Grid>
           </Grid>
         </Grid>
@@ -84,11 +93,12 @@ const Newsletter = styled(Button)`
   && {
     font-size: 16px;
     color: #fff;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
     border-radius: 0;
     transition: all 0.6s;
     background-color: #9ca3af;
+    display: block;
 
     &:hover {
       background-color: #8c929d;
