@@ -69,7 +69,9 @@ const Footer = () => {
             container
             sx={{
               display: "flex",
+              flexDirection: "column",
               justifyContent: "center",
+              alignItems: "center",
               textAlign: "center",
             }}
           >
@@ -78,6 +80,22 @@ const Footer = () => {
               <Typography variant="caption">
                 Sign up to get the latest news
               </Typography>
+            </Grid>
+            <Grid item sx={{ fontSize: 12 }}>
+              <List>
+                <ListItem disablePadding>
+                  <ListItemButton>Terms of Use</ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                  <ListItemButton>Privacy Statement</ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                  <ListItemButton>Digital Accessibility</ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                  <ListItemButton>FAQs</ListItemButton>
+                </ListItem>
+              </List>
             </Grid>
           </Grid>
         </Grid>
