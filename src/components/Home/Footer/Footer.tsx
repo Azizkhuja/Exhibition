@@ -7,6 +7,7 @@ import {
   ListItem,
   ListItemButton,
   Typography,
+  Link,
 } from "@mui/material";
 
 // Icons
@@ -106,7 +107,9 @@ const Footer = () => {
             <Grid item>
               <List sx={{ display: "flex", padding: 0 }}>
                 <ListItem>
-                  <GitHubIcon />
+                  <Link href="#">
+                    <GitHubIcon />
+                  </Link>
                 </ListItem>
                 <ListItem>
                   <LanguageIcon />
