@@ -161,5 +161,8 @@ const Newsletter = styled(Button)`
 const NewsletterItem = styled(ListItemButton)`
   padding: 1px;
 `;
+const LinkIcon = styled(Link)`
+  color: #9ca3b0;
+`;
 
 export default Footer;
