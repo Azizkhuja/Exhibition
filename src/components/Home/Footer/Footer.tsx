@@ -107,7 +107,7 @@ const Footer = () => {
             <Grid item>
               <List sx={{ display: "flex", padding: 0 }}>
                 <ListItem>
-                  <Link href="https://github.com/Azizkhuja">
+                  <Link href="https://github.com/Azizkhuja" target="_blank">
                     <GitHubIcon />
                   </Link>
                 </ListItem>
@@ -117,12 +117,15 @@ const Footer = () => {
                   </Link>
                 </ListItem>
                 <ListItem>
-                  <Link href="https://twitter.com/aziz_ipro">
+                  <Link href="https://twitter.com/aziz_ipro" target="_blank">
                     <TwitterIcon />
                   </Link>
                 </ListItem>
                 <ListItem>
-                  <Link href="https://www.linkedin.com/in/azizkhujakhujaev">
+                  <Link
+                    href="https://www.linkedin.com/in/azizkhujakhujaev"
+                    target="_blank"
+                  >
                     <LinkedInIcon />
                   </Link>
                 </ListItem>
