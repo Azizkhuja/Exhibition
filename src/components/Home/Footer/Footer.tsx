@@ -112,13 +112,19 @@ const Footer = () => {
                   </Link>
                 </ListItem>
                 <ListItem>
-                  <LanguageIcon />
+                  <Link href="#">
+                    <LanguageIcon />
+                  </Link>
                 </ListItem>
                 <ListItem>
-                  <TwitterIcon />
+                  <Link href="#">
+                    <TwitterIcon />
+                  </Link>
                 </ListItem>
                 <ListItem>
-                  <LinkedInIcon />
+                  <Link href="#">
+                    <LinkedInIcon />
+                  </Link>
                 </ListItem>
               </List>
             </Grid>
