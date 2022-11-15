@@ -16,6 +16,7 @@ import LanguageIcon from "@mui/icons-material/Language";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 const Footer = () => {
   return (
@@ -141,7 +142,9 @@ const Footer = () => {
         </Grid>
         <Grid item md={4}>
           <Grid item sx={{ display: "flex" }}>
-            <Grid></Grid>
+            <Grid>
+              <LocationOnIcon />
+            </Grid>
             <Grid>
               <p>
                 Harvard Art Museums 32 Quincy Street Cambridge, MA 02138 1 (617)
