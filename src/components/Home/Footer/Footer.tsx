@@ -140,7 +140,15 @@ const Footer = () => {
           </Grid>
         </Grid>
         <Grid item md={4}>
-          <Grid item></Grid>
+          <Grid item sx={{ display: "flex" }}>
+            <Grid></Grid>
+            <Grid>
+              <p>
+                Harvard Art Museums 32 Quincy Street Cambridge, MA 02138 1 (617)
+                495-9400
+              </p>
+            </Grid>
+          </Grid>
           <Grid item></Grid>
         </Grid>
       </Grid>
