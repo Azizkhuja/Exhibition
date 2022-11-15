@@ -146,10 +146,12 @@ const Footer = () => {
               <LocationOnIcon style={{ fontSize: 60 }} />
             </Grid>
             <Grid>
-              <p>
-                Harvard Art Museums 32 Quincy Street Cambridge, MA 02138 1 (617)
-                495-9400
-              </p>
+              <List>
+                <ListItem>Harvard Art Museums</ListItem>
+                <ListItem>32 Quincy Street</ListItem>
+                <ListItem>Cambridge, MA 02138</ListItem>
+                <ListItem>1 (617) 495-9400</ListItem>
+              </List>
             </Grid>
           </Grid>
           <Grid item></Grid>
