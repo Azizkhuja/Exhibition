@@ -140,7 +140,14 @@ const Footer = () => {
             </Grid>
           </Grid>
         </Grid>
-        <Grid item md={4}>
+        <Grid
+          item
+          md={4}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
           <Grid item sx={{ display: "flex", alignItems: "center" }}>
             <Grid>
               <LocationOnIcon style={{ fontSize: 60 }} />
