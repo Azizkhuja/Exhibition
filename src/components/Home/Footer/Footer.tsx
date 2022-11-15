@@ -140,7 +140,8 @@ const Footer = () => {
           </Grid>
         </Grid>
         <Grid item md={4}>
-          3
+          <Grid item></Grid>
+          <Grid item></Grid>
         </Grid>
       </Grid>
     </Container>
