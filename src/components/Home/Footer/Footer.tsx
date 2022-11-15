@@ -154,10 +154,10 @@ const Footer = () => {
             </Grid>
             <Grid>
               <List>
-                <ListItem>Harvard Art Museums</ListItem>
-                <ListItem>32 Quincy Street</ListItem>
-                <ListItem>Cambridge, MA 02138</ListItem>
-                <ListItem>1 (617) 495-9400</ListItem>
+                <ListItem disablePadding>Harvard Art Museums</ListItem>
+                <ListItem disablePadding>32 Quincy Street</ListItem>
+                <ListItem disablePadding>Cambridge, MA 02138</ListItem>
+                <ListItem disablePadding>1 (617) 495-9400</ListItem>
               </List>
             </Grid>
           </Grid>
