@@ -20,7 +20,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 const Footer = () => {
   return (
-    <Container sx={{ padding: 6, color: "#9ca3b0" }}>
+    <Container sx={{ paddingTop: 6, paddingBottom: 3, color: "#9ca3b0" }}>
       <Grid container>
         <Grid item md={4}>
           <Grid container sx={{ flexDirection: "column" }}>
