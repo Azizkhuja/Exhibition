@@ -145,7 +145,9 @@ const Footer = () => {
           md={4}
           sx={{
             display: "flex",
+            flexDirection: "column",
             justifyContent: "center",
+            alignItems: "center",
           }}
         >
           <Grid item sx={{ display: "flex", alignItems: "center" }}>
