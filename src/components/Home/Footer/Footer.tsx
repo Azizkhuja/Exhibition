@@ -161,7 +161,22 @@ const Footer = () => {
               </List>
             </Grid>
           </Grid>
-          <Grid item></Grid>
+          <Grid item>
+            <List>
+              <ListItem disablePadding>
+                <NewsletterItem>Terms of Use</NewsletterItem>
+              </ListItem>
+              <ListItem disablePadding>
+                <NewsletterItem>Privacy Statement</NewsletterItem>
+              </ListItem>
+              <ListItem disablePadding>
+                <NewsletterItem>Digital Accessibility</NewsletterItem>
+              </ListItem>
+              <ListItem disablePadding>
+                <NewsletterItem>FAQs</NewsletterItem>
+              </ListItem>
+            </List>
+          </Grid>
         </Grid>
       </Grid>
     </Container>
