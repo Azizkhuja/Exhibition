@@ -206,6 +206,11 @@ const NewsletterItem = styled(ListItemButton)`
 `;
 const LinkIcon = styled(Link)`
   color: #9ca3b0;
+  transition: all 0.6s;
+
+  &:hover {
+    color: #41444b;
+  }
 `;
 
 export default Footer;
