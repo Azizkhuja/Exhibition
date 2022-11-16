@@ -146,7 +146,6 @@ const Footer = () => {
           sx={{
             display: "flex",
             flexDirection: "column",
-            justifyContent: "center",
             alignItems: "center",
           }}
         >
@@ -164,7 +163,7 @@ const Footer = () => {
             </Grid>
           </Grid>
           <Grid item sx={{ fontSize: 12 }}>
-            <List>
+            <List disablePadding>
               <ListItem disablePadding>
                 <NewsletterItem>Special Event Rentals</NewsletterItem>
               </ListItem>
