@@ -164,16 +164,16 @@ const Footer = () => {
           <Grid item>
             <List>
               <ListItem disablePadding>
-                <NewsletterItem>Terms of Use</NewsletterItem>
+                <NewsletterItem>Special Event Rentals</NewsletterItem>
               </ListItem>
               <ListItem disablePadding>
-                <NewsletterItem>Privacy Statement</NewsletterItem>
+                <NewsletterItem>Comment Card</NewsletterItem>
               </ListItem>
               <ListItem disablePadding>
-                <NewsletterItem>Digital Accessibility</NewsletterItem>
+                <NewsletterItem>Image Licensing</NewsletterItem>
               </ListItem>
               <ListItem disablePadding>
-                <NewsletterItem>FAQs</NewsletterItem>
+                <NewsletterItem>API</NewsletterItem>
               </ListItem>
             </List>
           </Grid>
