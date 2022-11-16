@@ -161,7 +161,7 @@ const Footer = () => {
               </List>
             </Grid>
           </Grid>
-          <Grid item>
+          <Grid item sx={{ fontSize: 12 }}>
             <List>
               <ListItem disablePadding>
                 <NewsletterItem>Special Event Rentals</NewsletterItem>
