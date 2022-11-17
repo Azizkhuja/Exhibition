@@ -19,6 +19,8 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 const Footer = () => {
+  let fullYear = new Date().getFullYear();
+
   return (
     <Container sx={{ paddingTop: 6, paddingBottom: 3, color: "#9ca3b0" }}>
       <Grid container>
@@ -67,7 +69,7 @@ const Footer = () => {
             </Grid>
             <Grid item>
               <Typography variant="caption" sx={{ color: "grey" }}>
-                © 2022 President and Fellows of iPro museum
+                &copy; {fullYear} President and Fellows of iPro museum
               </Typography>
             </Grid>
           </Grid>
