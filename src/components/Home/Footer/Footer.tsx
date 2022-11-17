@@ -187,17 +187,18 @@ const Footer = () => {
 const Newsletter = styled(Button)`
   && {
     font-size: 16px;
-    color: #fff;
+    color: #000;
     padding-left: 50px;
     padding-right: 50px;
     border-radius: 0;
     transition: all 0.6s;
-    background-color: #9ca3af;
+    background-color: #fff;
+    border: 1px solid #000;
     display: block;
 
     &:hover {
-      background-color: #8c929d;
-      color: #c1c1c1;
+      background-color: #000;
+      color: #fff;
     }
   }
 `;
