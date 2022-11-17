@@ -24,7 +24,7 @@ const Footer = () => {
       <Grid container>
         <Grid item md={4}>
           <Grid container sx={{ flexDirection: "column" }}>
-            <Grid item>
+            <Grid item sx={{ color: "#000" }}>
               <Typography
                 variant="h6"
                 sx={{ display: "flex", alignItems: "center" }}
@@ -151,7 +151,7 @@ const Footer = () => {
         >
           <Grid item sx={{ display: "flex", alignItems: "center" }}>
             <Grid>
-              <LocationOnIcon style={{ fontSize: 60 }} />
+              <LocationOnIcon style={{ fontSize: 60, color: "#000" }} />
             </Grid>
             <Grid>
               <List>
