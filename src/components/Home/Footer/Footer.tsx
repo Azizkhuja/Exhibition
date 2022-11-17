@@ -206,11 +206,11 @@ const NewsletterItem = styled(ListItemButton)`
   padding: 1px;
 `;
 const LinkIcon = styled(Link)`
-  color: #9ca3b0;
+  color: #41444b;
   transition: all 0.6s;
 
   &:hover {
-    color: #41444b;
+    color: #9ca3b0;
   }
 `;
 
