@@ -18,6 +18,8 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 
+// TODO: Needs to refactor Listitems
+
 const Footer = () => {
   let fullYear = new Date().getFullYear();
 
