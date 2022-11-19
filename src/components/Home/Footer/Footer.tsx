@@ -17,6 +17,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import FooterListItem from "./FooterListItem";
 
 // TODO: Needs to refactor Listitems
 
@@ -144,6 +145,7 @@ const Footer = () => {
             </Grid>
           </Grid>
         </Grid>
+        <FooterListItem />
         <Grid
           item
           md={4}
