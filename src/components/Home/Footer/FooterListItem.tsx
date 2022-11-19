@@ -16,6 +16,13 @@ const FooterListItem = ({ policies, services }: DataTypes) => {
           </ListItem>
         );
       })}
+      {services?.map((item: string) => {
+        return (
+          <ListItem disablePadding>
+            <NewsletterItem>{item}</NewsletterItem>
+          </ListItem>
+        );
+      })}
     </List>
   );
 };
