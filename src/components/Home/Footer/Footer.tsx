@@ -159,7 +159,7 @@ const Footer = () => {
             </Grid>
           </Grid>
         </Grid>
-        <FooterListItem />
+        <FooterListItem policies={policies} services={services} />
         <Grid
           item
           md={4}
