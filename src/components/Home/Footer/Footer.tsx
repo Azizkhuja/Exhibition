@@ -109,20 +109,7 @@ const Footer = () => {
               </Typography>
             </Grid>
             <Grid item sx={{ fontSize: 12 }}>
-              <List>
-                <ListItem disablePadding>
-                  <NewsletterItem>Terms of Use</NewsletterItem>
-                </ListItem>
-                <ListItem disablePadding>
-                  <NewsletterItem>Privacy Statement</NewsletterItem>
-                </ListItem>
-                <ListItem disablePadding>
-                  <NewsletterItem>Digital Accessibility</NewsletterItem>
-                </ListItem>
-                <ListItem disablePadding>
-                  <NewsletterItem>FAQs</NewsletterItem>
-                </ListItem>
-              </List>
+              <FooterListItem policies={policies} />
             </Grid>
             <Grid item>
               <List sx={{ display: "flex", padding: 0 }}>
@@ -159,7 +146,7 @@ const Footer = () => {
             </Grid>
           </Grid>
         </Grid>
-        <FooterListItem policies={policies} services={services} />
+
         <Grid
           item
           md={4}
