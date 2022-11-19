@@ -19,6 +19,20 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import FooterListItem from "./FooterListItem";
 
+// Data
+const policies = [
+  "Terms of Use",
+  "Privacy Statement",
+  "Digital Accessibility",
+  "FAQs",
+];
+const services = [
+  "Special Event Rentals",
+  "Comment Card",
+  "Image Licensing",
+  "API",
+];
+
 // TODO: Needs to refactor Listitems
 
 const Footer = () => {
