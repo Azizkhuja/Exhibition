@@ -169,10 +169,9 @@ const Footer = () => {
             </Grid>
             <Grid>
               <List>
-                <ListItem disablePadding>Harvard Art Museums</ListItem>
-                <ListItem disablePadding>32 Quincy Street</ListItem>
-                <ListItem disablePadding>Cambridge, MA 02138</ListItem>
-                <ListItem disablePadding>1 (617) 495-9400</ListItem>
+                {addressInfo.map((item: string) => {
+                  return <ListItem disablePadding>{item}</ListItem>;
+                })}
               </List>
             </Grid>
           </Grid>
