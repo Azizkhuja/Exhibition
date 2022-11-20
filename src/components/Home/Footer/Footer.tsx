@@ -137,7 +137,15 @@ const Footer = () => {
             </Grid>
             <Grid item>
               <List sx={{ display: "flex", padding: 0 }}>
-                {socialAccInfo.map((item) => {})}
+                {socialAccInfo.map((item) => {
+                  return (
+                    <ListItem>
+                      <LinkIcon href={item.link} target="_blank">
+                        {item.icon}
+                      </LinkIcon>
+                    </ListItem>
+                  );
+                })}
               </List>
             </Grid>
           </Grid>
