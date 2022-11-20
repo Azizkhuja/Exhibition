@@ -150,7 +150,6 @@ const Footer = () => {
             </Grid>
           </Grid>
         </Grid>
-
         <Grid
           item
           md={4}
