@@ -33,6 +33,13 @@ const services = [
   "API",
 ];
 
+const addressInfo = [
+  "Harvard Art Museums",
+  "32 Quincy Street",
+  "Cambridge, MA 02138",
+  "1 (617) 495-9400",
+];
+
 // TODO: Needs to refactor Listitems
 
 const Footer = () => {
