@@ -170,20 +170,7 @@ const Footer = () => {
             </Grid>
           </Grid>
           <Grid item sx={{ fontSize: 12 }}>
-            <List disablePadding>
-              <ListItem disablePadding>
-                <NewsletterItem>Special Event Rentals</NewsletterItem>
-              </ListItem>
-              <ListItem disablePadding>
-                <NewsletterItem>Comment Card</NewsletterItem>
-              </ListItem>
-              <ListItem disablePadding>
-                <NewsletterItem>Image Licensing</NewsletterItem>
-              </ListItem>
-              <ListItem disablePadding>
-                <NewsletterItem>API</NewsletterItem>
-              </ListItem>
-            </List>
+            <FooterListItem services={services} />
           </Grid>
         </Grid>
       </Grid>
@@ -208,9 +195,6 @@ const Newsletter = styled(Button)`
       color: #fff;
     }
   }
-`;
-const NewsletterItem = styled(ListItemButton)`
-  padding: 1px;
 `;
 const LinkIcon = styled(Link)`
   color: #41444b;
