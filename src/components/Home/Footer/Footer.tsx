@@ -9,6 +9,7 @@ import {
   Typography,
   Link,
 } from "@mui/material";
+import { policies, services, addressInfo } from "./FooterData";
 
 // Icons
 import BeachAccessSharpIcon from "@mui/icons-material/BeachAccessSharp";
@@ -19,25 +20,6 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import FooterListItem from "./FooterListItem";
 
-// Data
-const policies = [
-  "Terms of Use",
-  "Privacy Statement",
-  "Digital Accessibility",
-  "FAQs",
-];
-const services = [
-  "Special Event Rentals",
-  "Comment Card",
-  "Image Licensing",
-  "API",
-];
-const addressInfo = [
-  "Harvard Art Museums",
-  "32 Quincy Street",
-  "Cambridge, MA 02138",
-  "1 (617) 495-9400",
-];
 const socialAccInfo = [
   {
     link: "https://github.com/Azizkhuja",
