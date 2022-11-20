@@ -32,12 +32,29 @@ const services = [
   "Image Licensing",
   "API",
 ];
-
 const addressInfo = [
   "Harvard Art Museums",
   "32 Quincy Street",
   "Cambridge, MA 02138",
   "1 (617) 495-9400",
+];
+const socialAccInfo = [
+  {
+    link: "https://github.com/Azizkhuja",
+    icon: <GitHubIcon />,
+  },
+  {
+    link: "https://azeezkhujaev.netlify.app",
+    icon: <LanguageIcon />,
+  },
+  {
+    link: "https://twitter.com/aziz_ipro",
+    icon: <TwitterIcon />,
+  },
+  {
+    link: "https://www.linkedin.com/in/azizkhujakhujaev",
+    icon: <LinkedInIcon />,
+  },
 ];
 
 // TODO: Needs to refactor Listitems
