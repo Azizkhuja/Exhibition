@@ -3,19 +3,22 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-export const policies = [
+// Data type
+type MenuItemTypes = string[];
+
+export const policies: MenuItemTypes = [
   "Terms of Use",
   "Privacy Statement",
   "Digital Accessibility",
   "FAQs",
 ];
-export const services = [
+export const services: MenuItemTypes = [
   "Special Event Rentals",
   "Comment Card",
   "Image Licensing",
   "API",
 ];
-export const addressInfo = [
+export const addressInfo: MenuItemTypes = [
   "Harvard Art Museums",
   "32 Quincy Street",
   "Cambridge, MA 02138",
