@@ -20,27 +20,6 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import FooterListItem from "./FooterListItem";
 
-const socialAccInfo = [
-  {
-    link: "https://github.com/Azizkhuja",
-    icon: <GitHubIcon />,
-  },
-  {
-    link: "https://azeezkhujaev.netlify.app",
-    icon: <LanguageIcon />,
-  },
-  {
-    link: "https://twitter.com/aziz_ipro",
-    icon: <TwitterIcon />,
-  },
-  {
-    link: "https://www.linkedin.com/in/azizkhujakhujaev",
-    icon: <LinkedInIcon />,
-  },
-];
-
-// TODO: Needs to refactor Listitems
-
 const Footer = () => {
   let fullYear = new Date().getFullYear();
 

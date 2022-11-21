@@ -17,3 +17,22 @@ export const addressInfo = [
   "Cambridge, MA 02138",
   "1 (617) 495-9400",
 ];
+
+export const socialAccInfo = [
+  {
+    link: "https://github.com/Azizkhuja",
+    icon: <GitHubIcon />,
+  },
+  {
+    link: "https://azeezkhujaev.netlify.app",
+    icon: <LanguageIcon />,
+  },
+  {
+    link: "https://twitter.com/aziz_ipro",
+    icon: <TwitterIcon />,
+  },
+  {
+    link: "https://www.linkedin.com/in/azizkhujakhujaev",
+    icon: <LinkedInIcon />,
+  },
+];
