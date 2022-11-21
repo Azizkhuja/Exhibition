@@ -5,6 +5,10 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 // Data type
 type MenuItemTypes = string[];
+type SocialAccTypes = {
+  link: string;
+  icon: any;
+}[];
 
 export const policies: MenuItemTypes = [
   "Terms of Use",
@@ -25,7 +29,7 @@ export const addressInfo: MenuItemTypes = [
   "1 (617) 495-9400",
 ];
 
-export const socialAccInfo = [
+export const socialAccInfo: SocialAccTypes = [
   {
     link: "https://github.com/Azizkhuja",
     icon: <GitHubIcon />,
