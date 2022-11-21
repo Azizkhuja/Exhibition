@@ -10,11 +10,10 @@ import {
   Link,
 } from "@mui/material";
 import { policies, services, addressInfo, socialAccInfo } from "./FooterData";
+import FooterListItem from "./FooterListItem";
 
-// Icons
 import BeachAccessSharpIcon from "@mui/icons-material/BeachAccessSharp";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import FooterListItem from "./FooterListItem";
 
 const Footer = () => {
   let fullYear = new Date().getFullYear();
