@@ -29,6 +29,13 @@ export const addressInfo: MenuItemTypes = [
   "1 (617) 495-9400",
 ];
 
+export const menuAbout: MenuItemTypes = ["About", "Contact us", "Press"];
+export const menuStaff: MenuItemTypes = [
+  "Staff",
+  "Employment",
+  "Collecting Policy",
+];
+
 export const socialAccInfo: SocialAccTypes = [
   {
     link: "https://github.com/Azizkhuja",
