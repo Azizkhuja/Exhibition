@@ -9,7 +9,14 @@ import {
   Typography,
   Link,
 } from "@mui/material";
-import { policies, services, addressInfo, socialAccInfo } from "./FooterData";
+import {
+  policies,
+  services,
+  addressInfo,
+  socialAccInfo,
+  menuAbout,
+  menuStaff,
+} from "./FooterData";
 import FooterListItem from "./FooterListItem";
 
 import BeachAccessSharpIcon from "@mui/icons-material/BeachAccessSharp";
@@ -38,15 +45,13 @@ const Footer = () => {
               <Grid container>
                 <Grid item>
                   <List>
-                    <ListItem disablePadding>
-                      <ListItemButton>About</ListItemButton>
-                    </ListItem>
-                    <ListItem disablePadding>
-                      <ListItemButton>Contact us</ListItemButton>
-                    </ListItem>
-                    <ListItem disablePadding>
-                      <ListItemButton>Press</ListItemButton>
-                    </ListItem>
+                    {menuAbout.map((item: string) => {
+                      return (
+                        <ListItem disablePadding>
+                          <ListItemButton>{item}</ListItemButton>
+                        </ListItem>
+                      );
+                    })}
                   </List>
                 </Grid>
                 <Grid item>
