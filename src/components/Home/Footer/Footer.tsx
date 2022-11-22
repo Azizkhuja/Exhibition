@@ -56,15 +56,13 @@ const Footer = () => {
                 </Grid>
                 <Grid item>
                   <List>
-                    <ListItem disablePadding>
-                      <ListItemButton>Staff</ListItemButton>
-                    </ListItem>
-                    <ListItem disablePadding>
-                      <ListItemButton>Employment</ListItemButton>
-                    </ListItem>
-                    <ListItem disablePadding>
-                      <ListItemButton>Collecting Policy</ListItemButton>
-                    </ListItem>
+                    {menuStaff.map((item: string) => {
+                      return (
+                        <ListItem disablePadding>
+                          <ListItemButton>{item}</ListItemButton>
+                        </ListItem>
+                      );
+                    })}
                   </List>
                 </Grid>
               </Grid>
