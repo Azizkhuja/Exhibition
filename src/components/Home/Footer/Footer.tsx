@@ -100,11 +100,16 @@ const Footer = () => {
                 Sign up to get the latest news
               </Typography>
             </Grid>
-            <Grid item sx={{ fontSize: 12 }}>
+            <Grid item sx={{ fontSize: belowXsSize ? 12 : 16 }}>
               <FooterListItem policies={policies} />
             </Grid>
             <Grid item>
-              <List sx={{ display: "flex", padding: 0 }}>
+              <List
+                sx={{
+                  display: "flex",
+                  padding: 0,
+                }}
+              >
                 {socialAccInfo.map((item) => {
                   return (
                     <ListItem>
