@@ -1,5 +1,6 @@
 import { styled } from "@mui/material/styles";
 import { List, ListItem, ListItemButton } from "@mui/material";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 type DataTypes = {
   policies?: string[];
@@ -7,8 +8,9 @@ type DataTypes = {
 };
 
 const FooterListItem = ({ policies, services }: DataTypes) => {
+  const belowXsSize = useMediaQuery("(max-width:600px)");
   return (
-    <List>
+    <List sx={{ fontSize: belowXsSize ? 16 : 12 }}>
       {policies?.map((item: string) => {
         return (
           <ListItem disablePadding>
