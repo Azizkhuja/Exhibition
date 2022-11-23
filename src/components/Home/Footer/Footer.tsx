@@ -135,7 +135,9 @@ const Footer = () => {
         >
           <Grid item sx={{ display: "flex", alignItems: "center" }}>
             <Grid>
-              <LocationOnIcon style={{ fontSize: 60, color: "#000" }} />
+              {belowXsSize ? null : (
+                <LocationOnIcon style={{ fontSize: 60, color: "#000" }} />
+              )}
             </Grid>
             <Grid>
               <List>
