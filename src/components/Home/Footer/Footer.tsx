@@ -100,7 +100,7 @@ const Footer = () => {
                 Sign up to get the latest news
               </Typography>
             </Grid>
-            <Grid item sx={{ fontSize: 12 }}>
+            <Grid item>
               <FooterListItem policies={policies} />
             </Grid>
             <Grid item>
@@ -145,7 +145,7 @@ const Footer = () => {
               </List>
             </Grid>
           </Grid>
-          <Grid item sx={{ fontSize: 12 }}>
+          <Grid item>
             <FooterListItem services={services} />
           </Grid>
         </Grid>
