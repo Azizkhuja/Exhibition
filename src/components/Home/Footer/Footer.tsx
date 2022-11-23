@@ -25,7 +25,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 const Footer = () => {
   let fullYear = new Date().getFullYear();
-  const belowXsSize = useMediaQuery("(max-width:400px)");
+  const belowXsSize = useMediaQuery("(max-width:600px)");
 
   return (
     <Container sx={{ paddingTop: 6, paddingBottom: 3, color: "#9ca3b0" }}>
@@ -36,7 +36,7 @@ const Footer = () => {
             sx={{
               flexDirection: "column",
               alignItems: "center",
-              marginBottom: belowXsSize ? null : 2,
+              marginBottom: belowXsSize ? 2 : null,
             }}
           >
             <Grid item sx={{ color: "#000" }}>
@@ -100,7 +100,7 @@ const Footer = () => {
                 Sign up to get the latest news
               </Typography>
             </Grid>
-            <Grid item sx={{ fontSize: belowXsSize ? 12 : 16 }}>
+            <Grid item sx={{ fontSize: 12 }}>
               <FooterListItem policies={policies} />
             </Grid>
             <Grid item>
