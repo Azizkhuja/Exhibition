@@ -27,8 +27,8 @@ const Footer = () => {
 
   return (
     <Container sx={{ paddingTop: 6, paddingBottom: 3, color: "#9ca3b0" }}>
-      <Grid container>
-        <Grid item md={4}>
+      <Grid container sx={{ alignItems: "center" }}>
+        <Grid item xs={12} sm={4}>
           <Grid container sx={{ flexDirection: "column" }}>
             <Grid item sx={{ color: "#000" }}>
               <Typography
@@ -74,7 +74,7 @@ const Footer = () => {
             </Grid>
           </Grid>
         </Grid>
-        <Grid item md={4}>
+        <Grid item xs={12} sm={4}>
           <Grid
             container
             sx={{
@@ -111,7 +111,8 @@ const Footer = () => {
         </Grid>
         <Grid
           item
-          md={4}
+          xs={12}
+          sm={4}
           sx={{
             display: "flex",
             flexDirection: "column",
