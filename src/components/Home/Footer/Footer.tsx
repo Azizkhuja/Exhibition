@@ -18,12 +18,14 @@ import {
   menuStaff,
 } from "./FooterData";
 import FooterListItem from "./FooterListItem";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 import BeachAccessSharpIcon from "@mui/icons-material/BeachAccessSharp";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 const Footer = () => {
   let fullYear = new Date().getFullYear();
+  const belowXsSize = useMediaQuery("(max-width:400px)");
 
   return (
     <Container sx={{ paddingTop: 6, paddingBottom: 3, color: "#9ca3b0" }}>
