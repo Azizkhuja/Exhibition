@@ -8,9 +8,9 @@ type DataTypes = {
 };
 
 const FooterListItem = ({ policies, services }: DataTypes) => {
-  const belowXsSize = useMediaQuery("(max-width:600px)");
+  const belowMdSize = useMediaQuery("(max-width:900px)");
   return (
-    <List sx={{ fontSize: belowXsSize ? 16 : 12 }}>
+    <List sx={{ fontSize: belowMdSize ? 16 : 12 }}>
       {policies?.map((item: string) => {
         return (
           <ListItem disablePadding>
