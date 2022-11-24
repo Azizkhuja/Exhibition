@@ -112,7 +112,7 @@ const Footer = () => {
               >
                 {socialAccInfo.map((item) => {
                   return (
-                    <ListItem>
+                    <ListItem sx={{ paddingLeft: belowXsSize ? 1 : null }}>
                       <LinkIcon href={item.link} target="_blank">
                         {item.icon}
                       </LinkIcon>
