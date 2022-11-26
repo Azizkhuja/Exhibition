@@ -168,7 +168,6 @@ const Newsletter = styled(Button)`
     background-color: #fff;
     border: 1px solid #000;
     display: block;
-    margin: 6px 0;
 
     &:hover {
       background-color: #000;
