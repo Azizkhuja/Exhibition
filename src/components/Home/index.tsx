@@ -5,6 +5,9 @@ import Search from "./Search/Search";
 import SearchMasonry from "./SearchMasonry/SearchMasonry";
 import Footer from "./Footer/Footer";
 
+// TODO: Get data from API
+// TODO: Prepare Interface
+
 const Home = () => {
   return (
     <>
