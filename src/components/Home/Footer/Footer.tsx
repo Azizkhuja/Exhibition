@@ -57,9 +57,11 @@ const Footer = () => {
                   <List>
                     {menuAbout.map((item: string) => {
                       return (
-                        <ListItem disablePadding>
-                          <ListItemButton>{item}</ListItemButton>
-                        </ListItem>
+                        <div key={item}>
+                          <ListItem disablePadding>
+                            <ListItemButton>{item}</ListItemButton>
+                          </ListItem>
+                        </div>
                       );
                     })}
                   </List>
@@ -68,9 +70,11 @@ const Footer = () => {
                   <List>
                     {menuStaff.map((item: string) => {
                       return (
-                        <ListItem disablePadding>
-                          <ListItemButton>{item}</ListItemButton>
-                        </ListItem>
+                        <div key={item}>
+                          <ListItem disablePadding>
+                            <ListItemButton>{item}</ListItemButton>
+                          </ListItem>
+                        </div>
                       );
                     })}
                   </List>
@@ -111,15 +115,15 @@ const Footer = () => {
                   padding: 0,
                 }}
               >
-                {socialAccInfo.map((item) => {
-                  return (
+                {socialAccInfo.map((item) => (
+                  <div key={item.link}>
                     <ListItem sx={{ paddingLeft: belowXsSize ? 1 : null }}>
                       <LinkIcon href={item.link} target="_blank">
                         {item.icon}
                       </LinkIcon>
                     </ListItem>
-                  );
-                })}
+                  </div>
+                ))}
               </List>
             </Grid>
           </Grid>
@@ -143,7 +147,11 @@ const Footer = () => {
             <Grid>
               <List>
                 {addressInfo.map((item: string) => {
-                  return <ListItem disablePadding>{item}</ListItem>;
+                  return (
+                    <div key={item}>
+                      <ListItem disablePadding>{item}</ListItem>
+                    </div>
+                  );
                 })}
               </List>
             </Grid>
