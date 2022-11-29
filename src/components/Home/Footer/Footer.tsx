@@ -22,6 +22,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 
 import BeachAccessSharpIcon from "@mui/icons-material/BeachAccessSharp";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import { Fragment } from "react";
 
 const Footer = () => {
   let fullYear = new Date().getFullYear();
@@ -55,25 +56,23 @@ const Footer = () => {
               <Grid container>
                 <Grid item>
                   <List>
-                    {menuAbout.map((item: string) => {
-                      return (
-                        <div key={item}>
-                          <ListItem disablePadding>
-                            <ListItemButton>{item}</ListItemButton>
-                          </ListItem>
-                        </div>
-                      );
-                    })}
+                    {menuAbout.map((item: string) => (
+                      <Fragment key={item}>
+                        <ListItem disablePadding>
+                          <ListItemButton>{item}</ListItemButton>
+                        </ListItem>
+                      </Fragment>
+                    ))}
                   </List>
                 </Grid>
                 <Grid item>
                   <List>
                     {menuStaff.map((item: string) => (
-                      <div key={item}>
+                      <Fragment key={item}>
                         <ListItem disablePadding>
                           <ListItemButton>{item}</ListItemButton>
                         </ListItem>
-                      </div>
+                      </Fragment>
                     ))}
                   </List>
                 </Grid>
@@ -114,13 +113,13 @@ const Footer = () => {
                 }}
               >
                 {socialAccInfo.map((item) => (
-                  <div key={item.link}>
+                  <Fragment key={item.link}>
                     <ListItem sx={{ paddingLeft: belowXsSize ? 1 : null }}>
                       <LinkIcon href={item.link} target="_blank">
                         {item.icon}
                       </LinkIcon>
                     </ListItem>
-                  </div>
+                  </Fragment>
                 ))}
               </List>
             </Grid>
@@ -145,9 +144,9 @@ const Footer = () => {
             <Grid>
               <List>
                 {addressInfo.map((item: string) => (
-                  <div key={item}>
+                  <Fragment key={item}>
                     <ListItem disablePadding>{item}</ListItem>
-                  </div>
+                  </Fragment>
                 ))}
               </List>
             </Grid>
