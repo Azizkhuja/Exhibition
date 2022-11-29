@@ -68,15 +68,13 @@ const Footer = () => {
                 </Grid>
                 <Grid item>
                   <List>
-                    {menuStaff.map((item: string) => {
-                      return (
-                        <div key={item}>
-                          <ListItem disablePadding>
-                            <ListItemButton>{item}</ListItemButton>
-                          </ListItem>
-                        </div>
-                      );
-                    })}
+                    {menuStaff.map((item: string) => (
+                      <div key={item}>
+                        <ListItem disablePadding>
+                          <ListItemButton>{item}</ListItemButton>
+                        </ListItem>
+                      </div>
+                    ))}
                   </List>
                 </Grid>
               </Grid>
@@ -146,13 +144,11 @@ const Footer = () => {
             </Grid>
             <Grid>
               <List>
-                {addressInfo.map((item: string) => {
-                  return (
-                    <div key={item}>
-                      <ListItem disablePadding>{item}</ListItem>
-                    </div>
-                  );
-                })}
+                {addressInfo.map((item: string) => (
+                  <div key={item}>
+                    <ListItem disablePadding>{item}</ListItem>
+                  </div>
+                ))}
               </List>
             </Grid>
           </Grid>
