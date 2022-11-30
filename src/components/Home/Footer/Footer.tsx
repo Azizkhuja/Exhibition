@@ -29,7 +29,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 const Footer = () => {
   // Get full current year
   let fullYear = new Date().getFullYear();
-
+  // Get responsive size
   const belowMdSize = useMediaQuery("(max-width:900px)");
   const belowXsSize = useMediaQuery("(max-width:600px)");
 
@@ -164,6 +164,7 @@ const Footer = () => {
   );
 };
 
+// Styled components
 const Newsletter = styled(Button)`
   && {
     font-size: 16px;
