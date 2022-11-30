@@ -11,6 +11,7 @@ type SocialAccTypes = {
   icon: any;
 }[];
 
+// Footer menu
 export const policies: MenuItemTypes = [
   "Terms of Use",
   "Privacy Statement",
@@ -36,7 +37,7 @@ export const menuStaff: MenuItemTypes = [
   "Employment",
   "Collecting Policy",
 ];
-
+// Footer social accounts
 export const socialAccInfo: SocialAccTypes = [
   {
     link: "https://github.com/Azizkhuja",
