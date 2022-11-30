@@ -21,14 +21,15 @@ import {
   Typography,
   Link,
 } from "@mui/material";
-
 import useMediaQuery from "@mui/material/useMediaQuery";
-
+// Material UI icons
 import BeachAccessSharpIcon from "@mui/icons-material/BeachAccessSharp";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 const Footer = () => {
+  // Get full current year
   let fullYear = new Date().getFullYear();
+
   const belowMdSize = useMediaQuery("(max-width:900px)");
   const belowXsSize = useMediaQuery("(max-width:600px)");
 
