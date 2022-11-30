@@ -9,6 +9,7 @@ type DataTypes = {
   services?: string[];
 };
 
+// Getting data from Footer component as props
 const FooterListItem = ({ policies, services }: DataTypes) => {
   // Get responsive size
   const belowMdSize = useMediaQuery("(max-width:900px)");
@@ -33,6 +34,7 @@ const FooterListItem = ({ policies, services }: DataTypes) => {
   );
 };
 
+// Styled components
 const NewsletterItem = styled(ListItemButton)`
   padding: 1px;
 `;
