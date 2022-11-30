@@ -1,4 +1,16 @@
+import { Fragment } from "react";
 import { styled } from "@mui/material/styles";
+import FooterListItem from "./FooterListItem";
+// Dummy data
+import {
+  policies,
+  services,
+  addressInfo,
+  socialAccInfo,
+  menuAbout,
+  menuStaff,
+} from "./FooterData";
+// Material UI
 import {
   Button,
   Container,
@@ -9,20 +21,11 @@ import {
   Typography,
   Link,
 } from "@mui/material";
-import {
-  policies,
-  services,
-  addressInfo,
-  socialAccInfo,
-  menuAbout,
-  menuStaff,
-} from "./FooterData";
-import FooterListItem from "./FooterListItem";
+
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 import BeachAccessSharpIcon from "@mui/icons-material/BeachAccessSharp";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import { Fragment } from "react";
 
 const Footer = () => {
   let fullYear = new Date().getFullYear();
