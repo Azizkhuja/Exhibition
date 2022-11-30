@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { styled } from "@mui/material/styles";
 import { List, ListItem, ListItemButton } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -12,14 +13,18 @@ const FooterListItem = ({ policies, services }: DataTypes) => {
   return (
     <List sx={{ fontSize: belowMdSize ? 16 : 12 }}>
       {policies?.map((item: string) => (
-        <ListItem disablePadding>
-          <NewsletterItem>{item}</NewsletterItem>
-        </ListItem>
+        <Fragment key={item}>
+          <ListItem disablePadding>
+            <NewsletterItem>{item}</NewsletterItem>
+          </ListItem>
+        </Fragment>
       ))}
       {services?.map((item: string) => (
-        <ListItem disablePadding>
-          <NewsletterItem>{item}</NewsletterItem>
-        </ListItem>
+        <Fragment key={item}>
+          <ListItem disablePadding>
+            <NewsletterItem>{item}</NewsletterItem>
+          </ListItem>
+        </Fragment>
       ))}
     </List>
   );
