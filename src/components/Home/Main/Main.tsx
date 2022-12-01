@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+
+// Material UI
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Container, Paper, Typography } from "@mui/material";
 import { Masonry } from "@mui/lab";
@@ -9,8 +11,10 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const Main = () => {
+  // Get responsive size
   const belowMdSize = useMediaQuery("(max-width:900px)");
   const belowXsSize = useMediaQuery("(max-width:400px)");
+
   return (
     <Container sx={{ marginTop: 5, marginBottom: 5 }}>
       <Masonry columns={belowXsSize ? 1 : belowMdSize ? 2 : 3} spacing={2}>
@@ -32,6 +36,7 @@ const Main = () => {
   );
 };
 
+// Styled components
 const itemData = [
   {
     img: "https://images.unsplash.com/photo-1549388604-817d15aa0110",
