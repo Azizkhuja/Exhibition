@@ -41,6 +41,7 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const SearchMasonry = () => {
+  // Get responsive size
   const belowMdSize = useMediaQuery("(max-width:900px)");
   const belowXsSize = useMediaQuery("(max-width:500px)");
 
@@ -62,6 +63,7 @@ const SearchMasonry = () => {
   );
 };
 
+// Styled components
 const LoadMoreButton = styled(Button)`
   && {
     font-size: 18px;
