@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+
+// Material UI
 import { alpha, styled } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
@@ -12,6 +14,8 @@ import {
   CssBaseline,
   Typography,
 } from "@mui/material";
+
+// Material UI icons
 import BeachAccessSharpIcon from "@mui/icons-material/BeachAccessSharp";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
@@ -34,7 +38,9 @@ function HideOnScroll(props: Props) {
 }
 
 function Navbar(props: Props) {
+  // Get responsive size
   const belowMdSize = useMediaQuery("(max-width:900px)");
+
   const [open, setOpen] = useState(false);
 
   const toggleDrawer = (newOpen: boolean) => () => {
@@ -108,6 +114,7 @@ function Navbar(props: Props) {
   );
 }
 
+// Styled components
 const LinkStyled = styled(Link)`
   margin-right: 5px;
   margin-left: 5px;
