@@ -1,9 +1,11 @@
 import { styled } from "@mui/material/styles";
+// Material UI
 import { Container, Paper, Box } from "@mui/material";
 import Masonry from "@mui/lab/Masonry";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Button from "@mui/material/Button";
 
+// Dummy image
 const imgArray = [
   "https://images.pexels.com/photos/3246665/pexels-photo-3246665.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   "https://images.pexels.com/photos/161154/stained-glass-spiral-circle-pattern-161154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
