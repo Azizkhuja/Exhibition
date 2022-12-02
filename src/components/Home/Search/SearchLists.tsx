@@ -1,6 +1,8 @@
+// Material UI icons
 import { ListItemButton, List, ListItem, ListItemText } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
+// Enums
 enum SearchType {
   Classification = "Classification",
   WorkType = "Work Type",
