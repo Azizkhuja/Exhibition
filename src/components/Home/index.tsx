@@ -8,6 +8,7 @@ import Footer from "./Footer/Footer";
 // TODO: Get data from API
 // TODO: Prepare Interface
 
+// Wrapped with Home component
 const Home = () => {
   return (
     <>
