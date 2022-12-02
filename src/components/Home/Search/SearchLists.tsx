@@ -14,7 +14,9 @@ enum SearchType {
 }
 
 const SearchLists = () => {
+  // Get responsive size
   const belowMdSize = useMediaQuery("(max-width:900px)");
+
   return (
     <List sx={{ display: "flex" }}>
       {!belowMdSize
