@@ -1,12 +1,15 @@
 import styled from "styled-components";
+// Material UI
 import { Container, Typography, TextField, Divider } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 import SearchLists from "./SearchLists";
 
 const Search = () => {
+  // Get responsive size
   const belowMdSize = useMediaQuery("(max-width:900px)");
   const belowXsSize = useMediaQuery("(max-width:400px)");
+
   return (
     <Container>
       <Typography
@@ -30,6 +33,7 @@ const Search = () => {
   );
 };
 
+// Styled components
 const NameUnderline = styled("span")`
   border-bottom: 2px solid #000;
 `;
