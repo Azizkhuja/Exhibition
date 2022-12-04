@@ -5,5 +5,7 @@ import Search from "../components/Home/Search/Search";
 describe("Test", () => {
   it("should get navbar title", () => {
     render(<Search />);
+    const getTitle = screen.getByText(/Fogg/i);
+    expect(getTitle).toBeInTheDocument();
   });
 });
