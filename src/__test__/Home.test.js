@@ -6,6 +6,8 @@ import Main from "../components/Home/Main/Main";
 describe("Should get home page and nested components", () => {
   it("should get whole subtitle of search component", () => {
     render(<Main />);
+    const getTitle = screen.getAllByText(/On View/i);
+    expect(getTitle).toBeTruthy();
   });
   it("should get whole subtitle of search component", () => {
     render(<Search />);
