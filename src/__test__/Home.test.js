@@ -16,9 +16,9 @@ describe("Should get home page and nested components", () => {
   });
   it("should get Input Search component and return truth", () => {
     render(<Search />);
-    const heroImage = screen.getByRole("searchbox", {
+    const searchInput = screen.getByRole("searchbox", {
       name: /search for gallery number, artist, keyword, title/i,
     });
-    expect(heroImage).toBeTruthy();
+    expect(searchInput).toBeTruthy();
   });
 });
