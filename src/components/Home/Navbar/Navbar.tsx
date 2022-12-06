@@ -59,6 +59,7 @@ function Navbar(props: Props) {
               <Typography
                 variant="h6"
                 sx={{ display: "flex", alignItems: "center" }}
+                data-testid="navbar-title"
               >
                 <BeachAccessSharpIcon
                   style={{ fontSize: 34, marginRight: 5 }}
