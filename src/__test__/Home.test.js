@@ -16,5 +16,9 @@ describe("Should get home page and nested components", () => {
   });
   it("should get main page of hero image", () => {
     render(<Search />);
+    const heroImage = screen.getByRole("searchbox", {
+      name: /search for gallery number, artist, keyword, title/i,
+    });
+    expect(heroImage).toBeTruthy();
   });
 });
