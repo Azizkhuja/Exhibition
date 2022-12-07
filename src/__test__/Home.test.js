@@ -33,6 +33,6 @@ describe("Should get home page and nested components", () => {
   it("should get Input Search component and return truth", () => {
     render(<SearchLists />);
     const searchInput = screen.getByText(/classification/i);
-    expect(searchInput).toBeTruthy();
+    expect(searchInput).toBeInTheDocument();
   });
 });
