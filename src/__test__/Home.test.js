@@ -1,7 +1,14 @@
-import { render, screen, getByRole, getByTestId } from "@testing-library/react";
+import {
+  render,
+  screen,
+  getByRole,
+  getByTestId,
+  getByText,
+} from "@testing-library/react";
 import "@testing-library/jest-dom";
 import Search from "../components/Home/Search/Search";
 import Main from "../components/Home/Main/Main";
+import SearchLists from "../components/Home/Search/SearchLists";
 
 describe("Should get home page and nested components", () => {
   // Get on view text in the main page
@@ -22,5 +29,8 @@ describe("Should get home page and nested components", () => {
       name: /search for gallery number, artist, keyword, title/i,
     });
     expect(searchInput).toBeTruthy();
+  });
+  it("should get Input Search component and return truth", () => {
+    render(<SearchLists />);
   });
 });
