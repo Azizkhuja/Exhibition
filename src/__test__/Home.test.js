@@ -30,6 +30,7 @@ describe("Should get home page and nested components", () => {
     });
     expect(searchInput).toBeTruthy();
   });
+  // Get "classification" filter button in the search
   it("should get SearchLists component and to be in the document", () => {
     render(<SearchLists />);
     const searchInput = screen.getByText(/classification/i);
