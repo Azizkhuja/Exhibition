@@ -23,6 +23,7 @@ describe("Should get home page and nested components", () => {
     const getTitle = screen.getByText(/The Harvard Art Museums/i);
     expect(getTitle).toBeInTheDocument();
   });
+  // Get search compoent and input
   it("should get Input Search component and return truth", () => {
     render(<Search />);
     const searchInput = screen.getByRole("searchbox", {
