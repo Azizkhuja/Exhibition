@@ -37,4 +37,7 @@ describe("Should get home page and nested components", () => {
     const searchInput = screen.getByText(/classification/i);
     expect(searchInput).toBeInTheDocument();
   });
+  it("should get SearchLists component and to be in the document", () => {
+    render(<SearchLists />);
+  });
 });
