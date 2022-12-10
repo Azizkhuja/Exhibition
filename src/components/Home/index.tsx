@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import axios from "axios";
 
 import Main from "./Main/Main";
 import Navbar from "./Navbar/Navbar";
@@ -13,6 +14,7 @@ import Footer from "./Footer/Footer";
 // Wrapped with Home component
 const Home = () => {
   const [getMainPageObjectData, setGetMainPageObjectData] = useState([]);
+  const baseUrl = "https://api.harvardartmuseums.org/";
 
   return (
     <>
