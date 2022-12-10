@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 import Main from "./Main/Main";
 import Navbar from "./Navbar/Navbar";
 import Divider from "@mui/material/Divider";
@@ -10,6 +12,8 @@ import Footer from "./Footer/Footer";
 
 // Wrapped with Home component
 const Home = () => {
+  const [getMainPageObjectData, setGetMainPageObjectData] = useState([]);
+
   return (
     <>
       <Navbar children={undefined} />
