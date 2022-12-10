@@ -16,6 +16,14 @@ const Home = () => {
   const [getMainPageObjectData, setGetMainPageObjectData] = useState([]);
   const baseUrl = "https://api.harvardartmuseums.org/";
 
+  useEffect(() => {
+    axios
+      .get(`${baseUrl}object?apikey=${process.env.REACT_APP_API_KEY}`)
+      .then((response) => {
+        console.log(response.data);
+      });
+  }, []);
+
   return (
     <>
       <Navbar children={undefined} />
