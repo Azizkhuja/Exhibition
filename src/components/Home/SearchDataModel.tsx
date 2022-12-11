@@ -1,3 +1,11 @@
+export enum Accessionmethod {
+  Bequest = "Bequest",
+}
+
+export enum Classification {
+  Seals = "Seals",
+}
+
 export interface Color {
   color: string;
   spectrum: string;
