@@ -10,7 +10,9 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: "center",
 }));
 
-const Main = () => {
+const Main = ({ data }: any) => {
+  console.log(data);
+
   // Get responsive size
   const belowMdSize = useMediaQuery("(max-width:900px)");
   const belowXsSize = useMediaQuery("(max-width:400px)");
