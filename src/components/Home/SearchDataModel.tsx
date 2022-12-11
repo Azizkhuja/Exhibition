@@ -1,3 +1,20 @@
+export enum Lastupdate {
+  The20221210T0529350500 = "2022-12-10T05:29:35-0500",
+  The20221210T0529360500 = "2022-12-10T05:29:36-0500",
+}
+
+export enum Medium {
+  Lead = "Lead",
+  MediumLead = "lead",
+}
+
+export interface SeeAlso {
+  id: string;
+  type: Type;
+  format: SeeAlsoFormat;
+  profile: string;
+}
+
 export enum SeeAlsoFormat {
   ApplicationJSON = "application/json",
 }
