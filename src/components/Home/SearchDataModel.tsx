@@ -1,3 +1,19 @@
+export interface Color {
+  color: string;
+  spectrum: string;
+  hue: Hue;
+  percent: number;
+  css3: string;
+}
+
+export enum Hue {
+  Black = "Black",
+  Brown = "Brown",
+  Green = "Green",
+  Grey = "Grey",
+  Yellow = "Yellow",
+}
+
 export enum Contact {
   AmAsianmediterraneanHarvardEdu = "am_asianmediterranean@harvard.edu",
 }
