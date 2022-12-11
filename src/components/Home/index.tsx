@@ -20,7 +20,7 @@ const Home = () => {
     axios
       .get(`${baseUrl}object?apikey=${process.env.REACT_APP_API_KEY}`)
       .then((response) => {
-        setGetMainPageObjectData(response.data);
+        setGetMainPageObjectData(response.data.records);
       })
       .catch((error) => {
         console.log(error);
@@ -30,7 +30,7 @@ const Home = () => {
   return (
     <>
       <Navbar children={undefined} />
-      <Main />
+      <Main data={getMainPageObjectData} />
       <Divider />
       <Search />
       <SearchMasonry />
