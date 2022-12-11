@@ -20,7 +20,10 @@ const Home = () => {
     axios
       .get(`${baseUrl}object?apikey=${process.env.REACT_APP_API_KEY}`)
       .then((response) => {
-        console.log(response.data);
+        setGetMainPageObjectData(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
       });
   }, []);
 
