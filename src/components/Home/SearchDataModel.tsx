@@ -1,3 +1,36 @@
+export enum Contact {
+  AmAsianmediterraneanHarvardEdu = "am_asianmediterranean@harvard.edu",
+}
+
+export enum Culture {
+  Byzantine = "Byzantine",
+}
+
+export enum Department {
+  DepartmentOfAncientAndByzantineArtNumismatics = "Department of Ancient and Byzantine Art & Numismatics",
+}
+
+export interface Details {
+  coins: Coins;
+}
+
+export interface Coins {
+  reverseinscription: null;
+  dieaxis: null;
+  metal: Metal;
+  obverseinscription: null;
+  denomination: null;
+  dateonobject: null;
+}
+
+export enum Metal {
+  Pb = "Pb",
+}
+
+export enum Division {
+  AsianAndMediterraneanArt = "Asian and Mediterranean Art",
+}
+
 export interface Image {
   date: Date;
   copyright: Copyright;
