@@ -1,10 +1,4 @@
-import {
-  render,
-  screen,
-  getByRole,
-  getByTestId,
-  getByText,
-} from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import Search from "../components/Home/Search/Search";
 import Main from "../components/Home/Main/Main";
