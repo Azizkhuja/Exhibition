@@ -30,7 +30,7 @@ const Home = () => {
   return (
     <>
       <Navbar children={undefined} />
-      <Main data={getMainPageObjectData} />
+      <Main mainPageData={getMainPageObjectData} />
       <Divider />
       <Search />
       <SearchMasonry />

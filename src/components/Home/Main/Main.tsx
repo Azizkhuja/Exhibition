@@ -9,15 +9,15 @@ import { Masonry } from "@mui/lab";
 import { MainPageData } from "../SearchDataModel";
 
 type MainPageDataTypes = {
-  data: MainPageData[];
+  mainPageData: MainPageData[];
 };
 
 const Item = styled(Paper)(({ theme }) => ({
   textAlign: "center",
 }));
 
-const Main = ({ data }: MainPageDataTypes) => {
-  console.log(data);
+const Main = ({ mainPageData }: MainPageDataTypes) => {
+  console.log(mainPageData);
 
   // Get responsive size
   const belowMdSize = useMediaQuery("(max-width:900px)");
