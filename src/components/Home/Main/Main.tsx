@@ -6,11 +6,17 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { Container, Paper, Typography } from "@mui/material";
 import { Masonry } from "@mui/lab";
 
+import { MainPageData } from "../SearchDataModel";
+
+type MainPageDataTypes = {
+  data: MainPageData[];
+};
+
 const Item = styled(Paper)(({ theme }) => ({
   textAlign: "center",
 }));
 
-const Main = ({ data }: any) => {
+const Main = ({ data }: MainPageDataTypes) => {
   console.log(data);
 
   // Get responsive size
