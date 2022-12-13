@@ -26,10 +26,10 @@ const Main = ({ mainPageData }: MainPageDataTypes) => {
   return (
     <Container sx={{ marginTop: 5, marginBottom: 5 }}>
       <Masonry columns={belowXsSize ? 1 : belowMdSize ? 2 : 3} spacing={2}>
-        {itemData.map((itemImg, index) => (
+        {mainPageData.map((itemImg, index) => (
           <Item key={index}>
             <img
-              src={itemImg.img}
+              src={itemImg.primaryimageurl}
               alt={itemImg.title}
               style={{ width: "100%" }}
             />
