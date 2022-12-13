@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 // Material UI
 import useMediaQuery from "@mui/material/useMediaQuery";
