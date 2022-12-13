@@ -34,7 +34,7 @@ const Main = ({ mainPageData }: MainPageDataTypes) => {
               style={{ width: "100%" }}
             />
             <Typography variant="caption">
-              On View, {itemImg.publishedData}
+              {`Published on ${itemImg.dateoffirstpageview}`}
             </Typography>
             <Typography variant="h5">{itemImg.title}</Typography>
           </Item>
