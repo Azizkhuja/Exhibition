@@ -16,8 +16,6 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const Main = ({ mainPageData }: MainPageDataTypes) => {
-  console.log(mainPageData);
-
   // Get responsive size
   const belowMdSize = useMediaQuery("(max-width:900px)");
   const belowXsSize = useMediaQuery("(max-width:400px)");
