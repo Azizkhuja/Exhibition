@@ -6,6 +6,7 @@ import SearchLists from "../components/Home/Search/SearchLists";
 
 describe("Should get home page and nested components", () => {
   // Get on view text in the main page
+  // TODO: FIX next line
   it("should get card component's on view text", () => {
     render(<Main />);
     const getOnViewText = screen.getAllByText(/On View/i);
