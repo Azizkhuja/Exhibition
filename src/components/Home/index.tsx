@@ -17,7 +17,11 @@ const Home = () => {
   const baseUrl = "https://api.harvardartmuseums.org/";
 
   useEffect(() => {}, []);
-  const fetchObjectData = async () => {};
+  const fetchObjectData = async () => {
+    const { data } = await axios.get(
+      `${baseUrl}object?apikey=${process.env.REACT_APP_API_KEY}`
+    );
+  };
 
   return (
     <>
