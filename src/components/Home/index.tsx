@@ -20,6 +20,7 @@ const Home = () => {
     fetchObjectData();
   }, []);
 
+  // Create function request to server asynchronously
   const fetchObjectData = async () => {
     const { data } = await axios.get(
       `${baseUrl}object?apikey=${process.env.REACT_APP_API_KEY}`
