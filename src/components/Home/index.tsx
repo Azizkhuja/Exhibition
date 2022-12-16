@@ -16,16 +16,7 @@ const Home = () => {
   const [getMainPageObjectData, setGetMainPageObjectData] = useState([]);
   const baseUrl = "https://api.harvardartmuseums.org/";
 
-  useEffect(() => {
-    axios
-      .get(`${baseUrl}object?apikey=${process.env.REACT_APP_API_KEY}`)
-      .then((response) => {
-        setGetMainPageObjectData(response.data.records);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
+  useEffect(() => {}, []);
 
   return (
     <>
