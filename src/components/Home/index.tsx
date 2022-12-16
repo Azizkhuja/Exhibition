@@ -17,6 +17,7 @@ const Home = () => {
   const baseUrl = "https://api.harvardartmuseums.org/";
 
   useEffect(() => {}, []);
+  const fetchObjectData = async () => {};
 
   return (
     <>
