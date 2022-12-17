@@ -12,7 +12,6 @@ type MainPageDataTypes = {
 };
 
 const Item = styled(Paper)(({ theme }) => ({
-  textAlign: "center",
   padding: 8,
 }));
 
@@ -24,17 +23,17 @@ const Main = ({ mainPageData }: MainPageDataTypes) => {
   return (
     <Container sx={{ marginTop: 5, marginBottom: 5 }}>
       <Masonry columns={belowXsSize ? 1 : belowMdSize ? 2 : 3} spacing={2}>
-        {mainPageData.map((itemImg, index) => (
+        {mainPageData.map((itemData, index) => (
           <Item key={index}>
             <img
-              src={itemImg.primaryimageurl}
-              alt={itemImg.title}
+              src={itemData.primaryimageurl}
+              alt={itemData.title}
               style={{ width: "100%" }}
             />
             <Typography variant="caption">
-              {`Published on ${itemImg.dateoffirstpageview}`}
+              {`Published on ${itemData.dateoffirstpageview}`}
             </Typography>
-            <Typography variant="h5">{itemImg.title}</Typography>
+            <Typography variant="h5">{itemData.title}</Typography>
           </Item>
         ))}
       </Masonry>
