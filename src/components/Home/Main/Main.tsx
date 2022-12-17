@@ -36,6 +36,8 @@ const Main = ({ mainPageData }: MainPageDataTypes) => {
             <Typography variant="h5" sx={{ textAlign: "center" }}>
               {itemData.title}
             </Typography>
+            <Typography variant="body2">Culture: {itemData.culture}</Typography>
+            <Typography variant="body2">Century: {itemData.dated}</Typography>
           </Item>
         ))}
       </Masonry>
