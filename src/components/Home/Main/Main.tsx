@@ -13,6 +13,7 @@ type MainPageDataTypes = {
 
 const Item = styled(Paper)(({ theme }) => ({
   textAlign: "center",
+  padding: 8,
 }));
 
 const Main = ({ mainPageData }: MainPageDataTypes) => {
