@@ -33,7 +33,9 @@ const Main = ({ mainPageData }: MainPageDataTypes) => {
             <Typography variant="caption">
               {`Published on ${itemData.dateoffirstpageview}`}
             </Typography>
-            <Typography variant="h5">{itemData.title}</Typography>
+            <Typography variant="h5" sx={{ textAlign: "center" }}>
+              {itemData.title}
+            </Typography>
           </Item>
         ))}
       </Masonry>
