@@ -37,7 +37,9 @@ const Main = ({ mainPageData }: MainPageDataTypes) => {
               {itemData.title}
             </Typography>
             <Typography variant="body2">Culture: {itemData.culture}</Typography>
-            <Typography variant="body2">Century: {itemData.dated}</Typography>
+            <Typography variant="body2">
+              Century: {itemData.dated ? itemData.dated : "Unknown century"}
+            </Typography>
             <Typography variant="body2">
               Period: {itemData.period ? itemData.period : "No information"}
             </Typography>
