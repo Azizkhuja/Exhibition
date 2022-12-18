@@ -42,10 +42,12 @@ const Main = ({ mainPageData }: MainPageDataTypes) => {
               {itemData.culture ? itemData.culture : "Unknown culture"}
             </Typography>
             <Typography variant="body2">
-              Century: {itemData.dated ? itemData.dated : "Unknown century"}
+              <BoldText>Century: </BoldText>
+              {itemData.dated ? itemData.dated : "Unknown century"}
             </Typography>
             <Typography variant="body2">
-              Period: {itemData.period ? itemData.period : "No information"}
+              <BoldText>Period: </BoldText>
+              {itemData.period ? itemData.period : "No information"}
             </Typography>
           </Item>
         ))}
