@@ -6,6 +6,7 @@ import { Container, Paper, Typography } from "@mui/material";
 import { Masonry } from "@mui/lab";
 
 import { MainPageData } from "../SearchDataModel";
+import { BoldText } from "../../Utils";
 
 type MainPageDataTypes = {
   mainPageData: MainPageData[];
@@ -37,7 +38,8 @@ const Main = ({ mainPageData }: MainPageDataTypes) => {
               {itemData.title}
             </Typography>
             <Typography variant="body2">
-              Culture: {itemData.culture ? itemData.culture : "Unknown culture"}
+              <BoldText>Culture: </BoldText>
+              {itemData.culture ? itemData.culture : "Unknown culture"}
             </Typography>
             <Typography variant="body2">
               Century: {itemData.dated ? itemData.dated : "Unknown century"}
