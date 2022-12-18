@@ -37,15 +37,15 @@ const Main = ({ mainPageData }: MainPageDataTypes) => {
             <Typography variant="h5" my={2} sx={{ textAlign: "center" }}>
               {itemData.title}
             </Typography>
-            <Typography variant="body2">
+            <Typography variant="body1">
               <BoldText>Culture: </BoldText>
               {itemData.culture ? itemData.culture : "Unknown culture"}
             </Typography>
-            <Typography variant="body2">
+            <Typography variant="body1">
               <BoldText>Century: </BoldText>
               {itemData.dated ? itemData.dated : "Unknown century"}
             </Typography>
-            <Typography variant="body2">
+            <Typography variant="body1">
               <BoldText>Period: </BoldText>
               {itemData.period ? itemData.period : "No information"}
             </Typography>
