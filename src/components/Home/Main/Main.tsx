@@ -30,7 +30,9 @@ const Main = ({ mainPageData }: MainPageDataTypes) => {
         {mainPageData.map((itemData, index) => (
           <Item key={index}>
             <img
-              src={itemData.primaryimageurl}
+              src={
+                itemData.primaryimageurl ? itemData.primaryimageurl : iProCoin
+              }
               alt={itemData.title}
               style={{ width: "100%" }}
             />
