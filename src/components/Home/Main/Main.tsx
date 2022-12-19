@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+// Image
+import iProCoin from "../../../assets/ipro_coin.png";
+
 // Material UI
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Container, Paper, Typography } from "@mui/material";
