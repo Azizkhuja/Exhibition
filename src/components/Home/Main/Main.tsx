@@ -5,7 +5,7 @@ import iProCoin from "../../../assets/ipro_coin.png";
 
 // Material UI
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { Container, Paper, Typography } from "@mui/material";
+import { Container, Divider, Paper, Typography } from "@mui/material";
 import { Masonry } from "@mui/lab";
 
 import { MainPageData } from "../SearchDataModel";
@@ -47,10 +47,12 @@ const Main = ({ mainPageData }: MainPageDataTypes) => {
               <BoldText>Culture: </BoldText>
               {itemData.culture ? itemData.culture : "Unknown culture"}
             </Typography>
+            <Divider />
             <Typography variant="body1">
               <BoldText>Century: </BoldText>
               {itemData.dated ? itemData.dated : "Unknown century"}
             </Typography>
+            <Divider />
             <Typography variant="body1">
               <BoldText>Period: </BoldText>
               {itemData.period ? itemData.period : "No information"}
