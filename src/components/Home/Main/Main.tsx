@@ -38,7 +38,11 @@ const Main = ({ mainPageData }: MainPageDataTypes) => {
             />
             <Typography variant="caption">
               <BoldText>Published on: </BoldText>
-              {`${itemData.dateoffirstpageview}`}
+              {`${
+                itemData.dateoffirstpageview
+                  ? itemData.dateoffirstpageview
+                  : "recently"
+              }`}
             </Typography>
             <Typography variant="h5" my={1} sx={{ textAlign: "center" }}>
               {itemData.title}
