@@ -27,6 +27,8 @@ const Main = ({ mainPageData }: MainPageDataTypes) => {
   function getRandomDate() {
     const maxDate = Date.now();
     const timestamp = Math.floor(Math.random() * maxDate);
+    const convertToYearDate = new Date(timestamp);
+    const convertToString = JSON.stringify(test);
   }
 
   return (
