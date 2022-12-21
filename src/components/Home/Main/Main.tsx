@@ -49,7 +49,7 @@ const Main = ({ mainPageData }: MainPageDataTypes) => {
               {`${
                 itemData.dateoffirstpageview
                   ? itemData.dateoffirstpageview
-                  : "recently"
+                  : getRandomDate()
               }`}
             </Typography>
             <Typography variant="h5" my={1} sx={{ textAlign: "center" }}>
