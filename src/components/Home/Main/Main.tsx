@@ -24,7 +24,7 @@ const Main = ({ mainPageData }: MainPageDataTypes) => {
   const belowMdSize = useMediaQuery("(max-width:900px)");
   const belowXsSize = useMediaQuery("(max-width:400px)");
 
-  // Generates random year
+  // Generates random year-month-day
   function getRandomDate() {
     const maxDate = Date.now();
     const timestamp = Math.floor(Math.random() * maxDate);
