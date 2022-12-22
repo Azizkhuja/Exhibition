@@ -10,6 +10,7 @@ import { Masonry } from "@mui/lab";
 
 import { MainPageData } from "../SearchDataModel";
 import { BoldText } from "../../Utils";
+import { getRandomDate } from "../../Utils/helprs";
 
 type MainPageDataTypes = {
   mainPageData: MainPageData[];
