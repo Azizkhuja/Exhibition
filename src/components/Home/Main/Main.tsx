@@ -14,21 +14,23 @@ import { getRandomDate } from "../../Utils/Helpers";
 
 type MainPageDataTypes = {
   mainPageData: MainPageData[];
+  loading?: any;
 };
 
 const Item = styled(Paper)(({ theme }) => ({
   padding: 8,
 }));
 
-const Main = ({ mainPageData }: MainPageDataTypes) => {
+const Main = ({ mainPageData, loading }: MainPageDataTypes) => {
   // Get responsive size
   const belowMdSize = useMediaQuery("(max-width:900px)");
   const belowXsSize = useMediaQuery("(max-width:400px)");
 
   return (
     <Container sx={{ marginTop: 5, marginBottom: 5 }}>
+      {loading && <div>Loading...</div>}
       <Masonry columns={belowXsSize ? 1 : belowMdSize ? 2 : 3} spacing={2}>
-        {mainPageData.map((itemData, index) => (
+        {mainPageData?.map((itemData, index) => (
           <Item key={index}>
             <img
               src={
