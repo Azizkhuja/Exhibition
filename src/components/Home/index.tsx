@@ -23,7 +23,7 @@ const Home = () => {
     const { data } = await axios.get(
       `${baseUrl}object?apikey=${process.env.REACT_APP_API_KEY}`
     );
-    setGetMainPageObjectData(data.records);
+    setGetMainPageObjectData(data.records.slice(0, 9));
   };
 
   return (
