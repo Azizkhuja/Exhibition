@@ -13,19 +13,6 @@ const Home = () => {
   const [getMainPageObjectData, setGetMainPageObjectData] = useState([]);
   const baseUrl = "https://api.harvardartmuseums.org/";
 
-  useEffect(() => {
-    // Call function & get data from api endpoint
-    fetchObjectData();
-  }, []);
-
-  // Create function request to server asynchronously
-  const fetchObjectData = async () => {
-    const { data } = await axios.get(
-      `${baseUrl}object?apikey=${process.env.REACT_APP_API_KEY}`
-    );
-    setGetMainPageObjectData(data.records.slice(0, 9));
-  };
-
   return (
     <>
       <Navbar children={undefined} />
