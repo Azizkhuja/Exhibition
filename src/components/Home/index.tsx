@@ -1,6 +1,3 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
-
 import Main from "./Main/Main";
 import Navbar from "./Navbar/Navbar";
 import Divider from "@mui/material/Divider";
@@ -10,13 +7,12 @@ import Footer from "./Footer/Footer";
 
 // Wrapped with Home component
 const Home = () => {
-  const [getMainPageObjectData, setGetMainPageObjectData] = useState([]);
   const baseUrl = "https://api.harvardartmuseums.org/";
 
   return (
     <>
       <Navbar children={undefined} />
-      <Main mainPageData={getMainPageObjectData} />
+      <Main mainPageData={} />
       <Divider />
       <Search />
       <SearchMasonry />
