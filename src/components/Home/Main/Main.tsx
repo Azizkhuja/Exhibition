@@ -14,7 +14,7 @@ import { getRandomDate } from "../../Utils/Helpers";
 
 type MainPageDataTypes = {
   mainPageData: MainPageData[];
-  loading?: any;
+  loading: string;
 };
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -28,45 +28,48 @@ const Main = ({ mainPageData, loading }: MainPageDataTypes) => {
 
   return (
     <Container sx={{ marginTop: 5, marginBottom: 5 }}>
-      {loading && <div>Loading...</div>}
-      <Masonry columns={belowXsSize ? 1 : belowMdSize ? 2 : 3} spacing={2}>
-        {mainPageData?.map((itemData, index) => (
-          <Item key={index}>
-            <img
-              src={
-                itemData.primaryimageurl ? itemData.primaryimageurl : iProCoin
-              }
-              alt={itemData.title}
-              style={{ width: "100%" }}
-            />
-            <Typography variant="caption">
-              <BoldText>Published on: </BoldText>
-              {`${
-                itemData.dateoffirstpageview
-                  ? itemData.dateoffirstpageview
-                  : getRandomDate()
-              }`}
-            </Typography>
-            <Typography variant="h5" my={1} sx={{ textAlign: "center" }}>
-              {itemData.title}
-            </Typography>
-            <Typography variant="body1">
-              <BoldText>Culture: </BoldText>
-              {itemData.culture ? itemData.culture : "Unknown culture"}
-            </Typography>
-            <Divider />
-            <Typography variant="body1">
-              <BoldText>Century: </BoldText>
-              {itemData.dated ? itemData.dated : "Unknown century"}
-            </Typography>
-            <Divider />
-            <Typography variant="body1">
-              <BoldText>Period: </BoldText>
-              {itemData.period ? itemData.period : "No information"}
-            </Typography>
-          </Item>
-        ))}
-      </Masonry>
+      {loading ? (
+        <div>Loading...</div>
+      ) : (
+        <Masonry columns={belowXsSize ? 1 : belowMdSize ? 2 : 3} spacing={2}>
+          {mainPageData?.map((itemData, index) => (
+            <Item key={index}>
+              <img
+                src={
+                  itemData.primaryimageurl ? itemData.primaryimageurl : iProCoin
+                }
+                alt={itemData.title}
+                style={{ width: "100%" }}
+              />
+              <Typography variant="caption">
+                <BoldText>Published on: </BoldText>
+                {`${
+                  itemData.dateoffirstpageview
+                    ? itemData.dateoffirstpageview
+                    : getRandomDate()
+                }`}
+              </Typography>
+              <Typography variant="h5" my={1} sx={{ textAlign: "center" }}>
+                {itemData.title}
+              </Typography>
+              <Typography variant="body1">
+                <BoldText>Culture: </BoldText>
+                {itemData.culture ? itemData.culture : "Unknown culture"}
+              </Typography>
+              <Divider />
+              <Typography variant="body1">
+                <BoldText>Century: </BoldText>
+                {itemData.dated ? itemData.dated : "Unknown century"}
+              </Typography>
+              <Divider />
+              <Typography variant="body1">
+                <BoldText>Period: </BoldText>
+                {itemData.period ? itemData.period : "No information"}
+              </Typography>
+            </Item>
+          ))}
+        </Masonry>
+      )}
     </Container>
   );
 };
