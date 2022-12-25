@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <>
       <Navbar children={undefined} />
-      <Main mainPageData={data?.records?.slice(0, 9)} />
+      <Main mainPageData={data?.records?.slice(0, 9)} loading={loading} />
       <Divider />
       <Search />
       <SearchMasonry />
