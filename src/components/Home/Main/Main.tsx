@@ -11,6 +11,7 @@ import { Masonry } from "@mui/lab";
 import { MainPageData } from "../SearchDataModel";
 import { BoldText } from "../../Utils";
 import { getRandomDate } from "../../Utils/Helpers";
+import Loading from "./Loading";
 
 type MainPageDataTypes = {
   mainPageData: MainPageData[];
@@ -29,7 +30,7 @@ const Main = ({ mainPageData, loading }: MainPageDataTypes) => {
   return (
     <Container sx={{ marginTop: 5, marginBottom: 5 }}>
       {loading ? (
-        <div>Loading...</div>
+        <Loading />
       ) : (
         <Masonry columns={belowXsSize ? 1 : belowMdSize ? 2 : 3} spacing={2}>
           {mainPageData?.map((itemData, index) => (
