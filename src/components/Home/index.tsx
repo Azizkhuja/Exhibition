@@ -9,7 +9,7 @@ import useFetch from "../Hooks/useFetch";
 // Wrapped with Home component
 const Home = () => {
   const baseUrl = "https://api.harvardartmuseums.org/";
-  const { data, loading, error }: any = useFetch(
+  const { data, loading }: any = useFetch(
     `${baseUrl}object?apikey=${process.env.REACT_APP_API_KEY}`
   );
 
