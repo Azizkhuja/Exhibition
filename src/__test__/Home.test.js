@@ -47,5 +47,6 @@ describe("Should get home page and nested components", () => {
   it("get SearchLists component button: place type and should be in the documents", () => {
     render(<SearchLists />);
     const searchInput = screen.getByText(/place/i);
+    expect(searchInput).toBeInTheDocument();
   });
 });
