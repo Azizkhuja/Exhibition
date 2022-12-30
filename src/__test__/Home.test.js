@@ -50,4 +50,7 @@ describe("Should get home page and nested components", () => {
     const searchInput = screen.getByText(/place/i);
     expect(searchInput).toBeInTheDocument();
   });
+  it("get SearchLists component button: century type and should be in the documents", () => {
+    render(<SearchLists />);
+  });
 });
