@@ -1,7 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import Search from "../components/Home/Search/Search";
-import Main from "../components/Home/Main/Main";
 import SearchLists from "../components/Home/Search/SearchLists";
 
 describe("Should get home page and nested components", () => {
