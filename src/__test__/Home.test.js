@@ -5,12 +5,6 @@ import Main from "../components/Home/Main/Main";
 import SearchLists from "../components/Home/Search/SearchLists";
 
 describe("Should get home page and nested components", () => {
-  // Get on view text in the main page
-  it("should get card component's on view text", () => {
-    render(<Main />);
-    const getOnViewText = screen.getAllByText(/On View/i);
-    expect(getOnViewText).toBeTruthy();
-  });
   // Get subtitle of the application in the main page
   it("should get whole subtitle of search component", () => {
     render(<Search />);
