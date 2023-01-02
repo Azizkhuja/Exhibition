@@ -48,4 +48,5 @@ describe("Should get home page and nested components", () => {
     const searchInput = screen.getByText(/century/i);
     expect(searchInput).toBeInTheDocument();
   });
+  // Get "Gallery" filter button in the search
 });
