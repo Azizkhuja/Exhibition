@@ -49,7 +49,7 @@ describe("Should get home page and nested components", () => {
     expect(searchInput).toBeInTheDocument();
   });
   // Get "Gallery" filter button in the search
-  it("get SearchLists component button: century type and should be in the documents", () => {
+  it("get SearchLists component button: gallery type and should be in the documents", () => {
     render(<SearchLists />);
   });
 });
