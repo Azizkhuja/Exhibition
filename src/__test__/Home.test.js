@@ -54,4 +54,5 @@ describe("Should get home page and nested components", () => {
     const searchFilterButton = screen.getByText(/gallery/i);
     expect(searchFilterButton).toBeInTheDocument();
   });
+  // Get "On View" filter button in the search
 });
