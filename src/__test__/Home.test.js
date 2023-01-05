@@ -60,4 +60,5 @@ describe("Should get home page and nested components", () => {
     const searchFilterButton = screen.getByText(/on view/i);
     expect(searchFilterButton).toBeInTheDocument();
   });
+  // Add unit test for load more button
 });
