@@ -57,5 +57,6 @@ describe("Should get home page and nested components", () => {
   // Get "On View" filter button in the search
   it("get SearchLists component button: on view type and should be in the documents", () => {
     render(<SearchLists />);
+    const searchFilterButton = screen.getByText(/on view/i);
   });
 });
