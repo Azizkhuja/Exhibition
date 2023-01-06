@@ -61,4 +61,7 @@ describe("Should get home page and nested components", () => {
     expect(searchFilterButton).toBeInTheDocument();
   });
   // Add unit test for load more button
+  it("name", () => {
+    render(<SearchMasonry />);
+  });
 });
