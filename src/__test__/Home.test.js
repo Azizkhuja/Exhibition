@@ -2,6 +2,7 @@ import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import Search from "../components/Home/Search/Search";
 import SearchLists from "../components/Home/Search/SearchLists";
+import SearchMasonry from "../components/Home/SearchMasonry/SearchMasonry";
 
 describe("Should get home page and nested components", () => {
   // Get subtitle of the application in the main page
@@ -63,5 +64,8 @@ describe("Should get home page and nested components", () => {
   // Add unit test for load more button
   it("name", () => {
     render(<SearchMasonry />);
+    const searchFilterButton = screen.getByRole("button", {
+      name: /load more/i,
+    });
   });
 });
