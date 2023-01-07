@@ -64,7 +64,7 @@ describe("Should get home page and nested components", () => {
   // Add unit test for load more button
   it("get SearchMasonry component: load more button", () => {
     render(<SearchMasonry />);
-    const searchFilterButton = screen.getByRole("button", {
+    const loadMoreBtn = screen.getByRole("button", {
       name: /load more/i,
     });
     expect(searchFilterButton).toBeInTheDocument();
