@@ -67,6 +67,6 @@ describe("Should get home page and nested components", () => {
     const loadMoreBtn = screen.getByRole("button", {
       name: /load more/i,
     });
-    expect(searchFilterButton).toBeInTheDocument();
+    expect(loadMoreBtn).toBeInTheDocument();
   });
 });
