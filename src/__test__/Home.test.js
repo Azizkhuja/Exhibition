@@ -69,5 +69,4 @@ describe("Should get home page and nested components", () => {
     });
     expect(loadMoreBtn).toBeInTheDocument();
   });
-  // Add unit tests for footer
 });
