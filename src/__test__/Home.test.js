@@ -3,6 +3,7 @@ import "@testing-library/jest-dom";
 import Search from "../components/Home/Search/Search";
 import SearchLists from "../components/Home/Search/SearchLists";
 import SearchMasonry from "../components/Home/SearchMasonry/SearchMasonry";
+import Footer from "../components/Home/Footer/Footer";
 
 describe("Should get home page and nested components", () => {
   // Get subtitle of the application in the main page
@@ -70,5 +71,7 @@ describe("Should get home page and nested components", () => {
     expect(loadMoreBtn).toBeInTheDocument();
   });
   // Foot part tests
-  it("get footer logo", () => {});
+  it("get footer logo", () => {
+    render(<Footer />);
+  });
 });
