@@ -76,5 +76,6 @@ describe("Should get home page and nested components", () => {
     const getFooterLogo = screen.getByRole("heading", {
       name: /ipro museums/i,
     });
+    expect(getFooterLogo).toBeInTheDocument();
   });
 });
