@@ -80,4 +80,5 @@ describe("Should get home page and nested components", () => {
     expect(getFooterLogo).toBeInTheDocument();
   });
   // Get "Meno About" button in Home page footer
+  it("", () => {});
 });
