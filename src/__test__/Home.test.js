@@ -71,6 +71,7 @@ describe("Should get home page and nested components", () => {
     expect(loadMoreBtn).toBeInTheDocument();
   });
   // Foot part tests
+  // Get "company logo" in Home page from Footer component
   it("get footer logo", () => {
     render(<Footer />);
     const getFooterLogo = screen.getByRole("heading", {
