@@ -86,5 +86,7 @@ describe("Should get home page and nested components", () => {
     expect(getAboutMenu).toBeInTheDocument();
   });
   // Get "Staff About" button in Home page footer
-  it("get staff menu in footer", () => {});
+  it("get staff menu in footer", () => {
+    render(<Footer />);
+  });
 });
