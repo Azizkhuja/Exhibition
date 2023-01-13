@@ -85,4 +85,5 @@ describe("Should get home page and nested components", () => {
     const getAboutMenu = screen.getByRole("button", { name: /about/i });
     expect(getAboutMenu).toBeInTheDocument();
   });
+  // Get "Staff About" button in Home page footer
 });
