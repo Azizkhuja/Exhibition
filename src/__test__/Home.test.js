@@ -82,5 +82,6 @@ describe("Should get home page and nested components", () => {
   // Get "Meno About" button in Home page footer
   it("get about menu in footer", () => {
     render(<Footer />);
+    const getAboutMenu = screen.getByRole("button", { name: /about/i });
   });
 });
