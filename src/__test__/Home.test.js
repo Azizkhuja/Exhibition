@@ -89,5 +89,6 @@ describe("Should get home page and nested components", () => {
   it("get staff menu in footer", () => {
     render(<Footer />);
     const getStaffMenu = screen.getByRole("button", { name: /staff/i });
+    expect(getStaffMenu).toBeInTheDocument();
   });
 });
