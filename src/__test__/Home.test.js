@@ -94,6 +94,6 @@ describe("Should get home page and nested components", () => {
   // Get "Contact US" button in Home page footer
   it("get contact us in footer", () => {
     render(<Footer />);
-    const getStaffMenu = screen.getByRole("button", { name: /contact us/i });
+    const getContactUs = screen.getByRole("button", { name: /contact us/i });
   });
 });
