@@ -92,5 +92,7 @@ describe("Should get home page and nested components", () => {
     expect(getStaffMenu).toBeInTheDocument();
   });
   // Get "Contact US" button in Home page footer
-  it("get contact us in footer", () => {});
+  it("get contact us in footer", () => {
+    render(<Footer />);
+  });
 });
