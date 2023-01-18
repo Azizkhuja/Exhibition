@@ -97,4 +97,5 @@ describe("Should get home page and nested components", () => {
     const getContactUs = screen.getByRole("button", { name: /contact us/i });
     expect(getContactUs).toBeInTheDocument();
   });
+  // Get "Employment" button in Home page footer
 });
