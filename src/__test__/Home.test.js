@@ -98,5 +98,5 @@ describe("Should get home page and nested components", () => {
     expect(getContactUs).toBeInTheDocument();
   });
   // Get "Employment" button in Home page footer
-  it("", () => {});
+  it("get Employment in footer", () => {});
 });
