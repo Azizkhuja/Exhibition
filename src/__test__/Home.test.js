@@ -103,5 +103,5 @@ describe("Should get home page and nested components", () => {
     const getEmployment = screen.getByRole("button", { name: /employment/i });
     expect(getEmployment).toBeInTheDocument();
   });
-  // Get "Press"
+  // Get "Press" button in Home page footer
 });
