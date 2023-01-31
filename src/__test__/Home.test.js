@@ -109,5 +109,5 @@ describe("Should get home page and nested components", () => {
     const getPress = screen.getByRole("button", { name: /press/i });
     expect(getPress).toBeInTheDocument();
   });
-  // Get "Collecting" button in Home page footer
+  // Get "Collecting Policy" button in Home page footer
 });
