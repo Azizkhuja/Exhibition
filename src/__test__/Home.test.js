@@ -104,5 +104,7 @@ describe("Should get home page and nested components", () => {
     expect(getEmployment).toBeInTheDocument();
   });
   // Get "Press" button in Home page footer
-  it("get Press in footer", () => {});
+  it("get Press in footer", () => {
+    render(<Footer />);
+  });
 });
