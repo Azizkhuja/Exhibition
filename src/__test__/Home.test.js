@@ -110,5 +110,5 @@ describe("Should get home page and nested components", () => {
     expect(getPress).toBeInTheDocument();
   });
   // Get "Collecting Policy" button in Home page footer
-  it("", () => {});
+  it("get collecting policy in footer", () => {});
 });
