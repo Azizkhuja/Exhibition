@@ -115,5 +115,6 @@ describe("Should get home page and nested components", () => {
     const getCollectingPolicy = screen.getByRole("button", {
       name: /collecting policy/i,
     });
+    expect(getCollectingPolicy).toBeInTheDocument();
   });
 });
