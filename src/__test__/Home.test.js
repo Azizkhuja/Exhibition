@@ -117,4 +117,5 @@ describe("Should get home page and nested components", () => {
     });
     expect(getCollectingPolicy).toBeInTheDocument();
   });
+  // Get "" text in Home page footer
 });
