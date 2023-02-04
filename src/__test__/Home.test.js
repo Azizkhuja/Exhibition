@@ -117,5 +117,5 @@ describe("Should get home page and nested components", () => {
     });
     expect(getCollectingPolicy).toBeInTheDocument();
   });
-  // Get "" text in Home page footer
+  // Get "Current/dynamic year and  President and Fellows of iPro museum" text in Home page footer
 });
