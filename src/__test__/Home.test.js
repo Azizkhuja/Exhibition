@@ -119,7 +119,7 @@ describe("Should get home page and nested components", () => {
   });
   // Get "Current/dynamic year and president and fellows of iPro museum" text in Home page footer
   it("Current/dynamic year & president and fellows of iPro museum", () => {
-    const getCollectingPolicy = screen.getByText(
+    const getYearAndText = screen.getByText(
       /president and fellows of ipro museum/i
     );
   });
