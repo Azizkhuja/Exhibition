@@ -122,5 +122,6 @@ describe("Should get home page and nested components", () => {
     const getYearAndText = screen.getByText(
       /president and fellows of ipro museum/i
     );
+    expect(getYearAndText).toBeInTheDocument();
   });
 });
