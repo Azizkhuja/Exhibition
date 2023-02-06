@@ -119,4 +119,7 @@ describe("Should get home page and nested components", () => {
     expect(getCollectingPolicy).toBeInTheDocument();
   });
   // Get "Current/dynamic year and president and fellows of iPro museum" text in Home page footer
+  test("renders the copyright text", () => {
+    const fullYear = new Date().getFullYear();
+  });
 });
