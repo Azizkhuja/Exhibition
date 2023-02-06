@@ -121,5 +121,10 @@ describe("Should get home page and nested components", () => {
   // Get "Current/dynamic year and president and fellows of iPro museum" text in Home page footer
   test("renders the copyright text", () => {
     const fullYear = new Date().getFullYear();
+    render(
+      <Typography variant="caption" sx={{ color: "grey" }}>
+        &copy; {fullYear} President and Fellows of iPro museum
+      </Typography>
+    );
   });
 });
