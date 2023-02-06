@@ -4,6 +4,7 @@ import Search from "../components/Home/Search/Search";
 import SearchLists from "../components/Home/Search/SearchLists";
 import SearchMasonry from "../components/Home/SearchMasonry/SearchMasonry";
 import Footer from "../components/Home/Footer/Footer";
+import { Typography } from "@mui/material";
 
 describe("Should get home page and nested components", () => {
   // Get subtitle of the application in the main page
