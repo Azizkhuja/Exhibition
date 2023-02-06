@@ -126,5 +126,9 @@ describe("Should get home page and nested components", () => {
         &copy; {fullYear} President and Fellows of iPro museum
       </Typography>
     );
+    expect(
+      screen.getByText(
+        `\u00A9 ${fullYear} `
+      )
   });
 });
