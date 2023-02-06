@@ -128,7 +128,7 @@ describe("Should get home page and nested components", () => {
     );
     expect(
       screen.getByText(
-        `\u00A9 ${fullYear} `
+        `\u00A9 ${fullYear} President and Fellows of iPro museum`
       )
   });
 });
