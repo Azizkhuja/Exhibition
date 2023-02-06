@@ -130,5 +130,6 @@ describe("Should get home page and nested components", () => {
       screen.getByText(
         `\u00A9 ${fullYear} President and Fellows of iPro museum`
       )
+    ).toBeInTheDocument();
   });
 });
