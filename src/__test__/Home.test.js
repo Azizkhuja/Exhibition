@@ -133,4 +133,5 @@ describe("Should get home page and nested components", () => {
     ).toBeInTheDocument();
   });
   // Get Newsletter button in Home page footer
+  it("", () => {});
 });
