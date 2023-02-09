@@ -135,5 +135,8 @@ describe("Should get home page and nested components", () => {
   // Get Newsletter button in Home page footer
   it("Get 'Newsletter' button in Home page footer", () => {
     render(<Footer />);
+    const getCollectingPolicy = screen.getByRole("button", {
+      name: /newsletter/i,
+    });
   });
 });
