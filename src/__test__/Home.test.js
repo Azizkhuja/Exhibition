@@ -138,5 +138,6 @@ describe("Should get home page and nested components", () => {
     const getNewsLetterBtn = screen.getByRole("button", {
       name: /newsletter/i,
     });
+    expect(getNewsLetterBtn).toBeInTheDocument();
   });
 });
