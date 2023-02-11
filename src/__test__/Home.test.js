@@ -141,4 +141,5 @@ describe("Should get home page and nested components", () => {
     expect(getNewsLetterBtn).toBeInTheDocument();
   });
   // Get "Sign up to get the latest news" text in Home page footer
+  it("", () => {});
 });
