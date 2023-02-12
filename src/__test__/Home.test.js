@@ -146,4 +146,5 @@ describe("Should get home page and nested components", () => {
     const getSignUpText = screen.getByText(/sign up to get the latest news/i);
     expect(getSignUpText).toBeInTheDocument();
   });
+  // Get "Terms of use"
 });
