@@ -147,5 +147,7 @@ describe("Should get home page and nested components", () => {
     expect(getSignUpText).toBeInTheDocument();
   });
   // Get "Terms of use" text button in Home page footer
-  it("Get 'Terms of use' button in Home page footer", () => {});
+  it("Get 'Terms of use' button in Home page footer", () => {
+    render(<Footer />);
+  });
 });
