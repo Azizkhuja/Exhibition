@@ -152,5 +152,6 @@ describe("Should get home page and nested components", () => {
     const getTermsOfUseText = screen.getByRole("button", {
       name: /terms of use/i,
     });
+    expect(getTermsOfUseText).toBeInTheDocument();
   });
 });
