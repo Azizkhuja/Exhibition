@@ -155,5 +155,7 @@ describe("Should get home page and nested components", () => {
     expect(getTermsOfUseText).toBeInTheDocument();
   });
   // Get "Privacy statement" text button in Home page footer
-  it("Get 'Privacy statement' button in Home page footer", () => {});
+  it("Get 'Privacy statement' button in Home page footer", () => {
+    render(<Footer />);
+  });
 });
