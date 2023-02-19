@@ -162,4 +162,5 @@ describe("Should get home page and nested components", () => {
     });
     expect(getPrivacyText).toBeInTheDocument();
   });
+  // Get "" text button in Home page footer
 });
