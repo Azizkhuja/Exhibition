@@ -163,5 +163,5 @@ describe("Should get home page and nested components", () => {
     expect(getPrivacyText).toBeInTheDocument();
   });
   // Get "Digital accessibility" text button in Home page footer
-  it("", () => {});
+  it("Get 'Digital accessibility' button in Home page footer", () => {});
 });
