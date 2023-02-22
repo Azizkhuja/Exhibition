@@ -165,5 +165,8 @@ describe("Should get home page and nested components", () => {
   // Get "Digital accessibility" text button in Home page footer
   it("Get 'Digital accessibility' button in Home page footer", () => {
     render(<Footer />);
+    const getPrivacyText = screen.getByRole("button", {
+      name: /faqs/i,
+    });
   });
 });
