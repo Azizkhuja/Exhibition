@@ -170,4 +170,5 @@ describe("Should get home page and nested components", () => {
     });
     expect(getFAQsText).toBeInTheDocument();
   });
+  // Get "Icons" in Home page footer
 });
