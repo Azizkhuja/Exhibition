@@ -168,5 +168,6 @@ describe("Should get home page and nested components", () => {
     const getFAQsText = screen.getByRole("button", {
       name: /faqs/i,
     });
+    expect(getPrivacyText).toBeInTheDocument();
   });
 });
