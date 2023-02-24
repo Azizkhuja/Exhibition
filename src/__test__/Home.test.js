@@ -166,7 +166,7 @@ describe("Should get home page and nested components", () => {
   it("Get 'Digital accessibility' button in Home page footer", () => {
     render(<Footer />);
     const getFAQsText = screen.getByRole("button", {
-      name: /faqs/i,
+      name: /digital accessibility/i,
     });
     expect(getFAQsText).toBeInTheDocument();
   });
