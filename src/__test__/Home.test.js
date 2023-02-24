@@ -171,5 +171,7 @@ describe("Should get home page and nested components", () => {
     expect(getFAQsText).toBeInTheDocument();
   });
   // Get "Digital accessibility" in Home page footer
-  it("Digital accessibility' button in Home page footer", () => {});
+  it("Digital accessibility' button in Home page footer", () => {
+    render(<Footer />);
+  });
 });
