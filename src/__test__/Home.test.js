@@ -177,4 +177,5 @@ describe("Should get home page and nested components", () => {
       name: /faqs/i,
     });
   });
+  // Get "Icons" in Home page footer
 });
