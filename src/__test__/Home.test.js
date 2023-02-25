@@ -180,7 +180,7 @@ describe("Should get home page and nested components", () => {
   // Get "Address" in Home page footer
   it("Get 'Special Event Rentals' in Home page footer", () => {
     render(<Footer />);
-    const name = screen.getByRole("button", {
+    const getEventsText = screen.getByRole("button", {
       name: /special event rentals/i,
     });
   });
