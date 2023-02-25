@@ -183,5 +183,6 @@ describe("Should get home page and nested components", () => {
     const getEventsText = screen.getByRole("button", {
       name: /special event rentals/i,
     });
+    expect(getEventsText).toBeInTheDocument();
   });
 });
