@@ -176,6 +176,7 @@ describe("Should get home page and nested components", () => {
     const getFAQsText = screen.getByRole("button", {
       name: /faqs/i,
     });
+    expect(getFAQsText).toBeInTheDocument();
   });
   // Get "Address" in Home page footer
   it("Get 'Special Event Rentals' in Home page footer", () => {
