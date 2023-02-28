@@ -192,5 +192,6 @@ describe("Should get home page and nested components", () => {
     const getCommentCardText = screen.getByRole("button", {
       name: /comment card/i,
     });
+    expect(getEventsText).toBeInTheDocument();
   });
 });
