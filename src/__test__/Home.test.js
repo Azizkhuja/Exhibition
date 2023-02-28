@@ -187,5 +187,5 @@ describe("Should get home page and nested components", () => {
     expect(getEventsText).toBeInTheDocument();
   });
   // Get "Comment card" in Home page footer
-  it("", () => {});
+  it("Get 'Comment card' in Home page footer", () => {});
 });
