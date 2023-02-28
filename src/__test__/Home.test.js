@@ -189,5 +189,8 @@ describe("Should get home page and nested components", () => {
   // Get "Comment card" in Home page footer
   it("Get 'Comment card' in Home page footer", () => {
     render(<Footer />);
+    screen.getByRole("button", {
+      name: /comment card/i,
+    });
   });
 });
