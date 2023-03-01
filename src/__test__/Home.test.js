@@ -195,4 +195,5 @@ describe("Should get home page and nested components", () => {
     expect(getCommentCardText).toBeInTheDocument();
   });
   // Get "Image licensing" in Home page footer
+  it("", () => {});
 });
