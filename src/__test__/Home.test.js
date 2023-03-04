@@ -197,5 +197,8 @@ describe("Should get home page and nested components", () => {
   // Get "Image licensing" in Home page footer
   it("Get 'Image licensing' in Home page footer", () => {
     render(<Footer />);
+    screen.getByRole("button", {
+      name: /image licensing/i,
+    });
   });
 });
