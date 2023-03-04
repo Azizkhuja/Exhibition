@@ -200,5 +200,6 @@ describe("Should get home page and nested components", () => {
     const getImageLicensingText = screen.getByRole("button", {
       name: /image licensing/i,
     });
+    expect(getImageLicensingText).toBeInTheDocument();
   });
 });
