@@ -203,5 +203,7 @@ describe("Should get home page and nested components", () => {
     expect(getImageLicensingText).toBeInTheDocument();
   });
   // Get "API" in Home page footer
-  it("Get 'API' in Home page footer", () => {});
+  it("Get 'API' in Home page footer", () => {
+    render(<Footer />);
+  });
 });
