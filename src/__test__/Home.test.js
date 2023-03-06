@@ -205,7 +205,7 @@ describe("Should get home page and nested components", () => {
   // Get "API" in Home page footer
   it("Get 'API' in Home page footer", () => {
     render(<Footer />);
-    const getImageLicensingText = screen.getByRole("button", {
+    const getAPIText = screen.getByRole("button", {
       name: /api/i,
     });
   });
