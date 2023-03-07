@@ -208,6 +208,6 @@ describe("Should get home page and nested components", () => {
     const getAPIText = screen.getByRole("button", {
       name: /api/i,
     });
-    expect(getImageLicensingText).toBeInTheDocument();
+    expect(getAPIText).toBeInTheDocument();
   });
 });
