@@ -6,10 +6,11 @@ import SearchMasonry from "../components/Home/SearchMasonry/SearchMasonry";
 import Footer from "../components/Home/Footer/Footer";
 import { Typography } from "@mui/material";
 
+const searchComponent = <Search />;
 describe("Should get home page and nested components", () => {
   // Get subtitle of the application in the main page
   it("should get whole subtitle of search component", () => {
-    render(<Search />);
+    render(searchComponent);
     const getTitle = screen.getByText(/The Harvard Art Museums/i);
     expect(getTitle).toBeInTheDocument();
   });
