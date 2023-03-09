@@ -50,7 +50,7 @@ describe("Should get home page and nested components", () => {
   });
   // Get "century" filter button in the search
   it("get SearchLists component button: century type and should be in the documents", () => {
-    render(<SearchLists />);
+    render(searchListsComponent);
     const searchInput = screen.getByText(/century/i);
     expect(searchInput).toBeInTheDocument();
   });
