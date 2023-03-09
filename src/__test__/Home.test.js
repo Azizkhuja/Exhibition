@@ -7,6 +7,7 @@ import Footer from "../components/Home/Footer/Footer";
 import { Typography } from "@mui/material";
 
 const searchComponent = <Search />;
+
 describe("Should get home page and nested components", () => {
   // Get subtitle of the application in the main page
   it("should get whole subtitle of search component", () => {
@@ -16,7 +17,7 @@ describe("Should get home page and nested components", () => {
   });
   // Get search compoent and input
   it("should get Input Search component and return truth", () => {
-    render(<Search />);
+    render(searchComponent);
     const searchInput = screen.getByRole("searchbox", {
       name: /search for gallery number, artist, keyword, title/i,
     });
