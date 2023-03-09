@@ -38,7 +38,7 @@ describe("Should get home page and nested components", () => {
   });
   // Get "period" filter button in the search
   it("get SearchLists component button: period type and should be in the documents", () => {
-    render(<SearchLists />);
+    render(searchListsComponent);
     const searchInput = screen.getByText(/period/i);
     expect(searchInput).toBeInTheDocument();
   });
