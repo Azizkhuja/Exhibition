@@ -7,7 +7,7 @@ import Footer from "../components/Home/Footer/Footer";
 import { Typography } from "@mui/material";
 
 const searchComponent = <Search />;
-const searchListsComponent = <Search />;
+const searchListsComponent = <SearchLists />;
 
 describe("Should get home page and nested components", () => {
   // Get subtitle of the application in the main page
