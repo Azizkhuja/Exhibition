@@ -69,7 +69,7 @@ describe("Should get home page and nested components", () => {
   });
   // Get "Load more" button in Home page SearchMasonry component
   it("get SearchMasonry component: load more button", () => {
-    render(<SearchMasonry />);
+    render(searchMasonryComponent);
     const loadMoreBtn = screen.getByRole("button", {
       name: /load more/i,
     });
