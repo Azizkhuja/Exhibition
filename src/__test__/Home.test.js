@@ -8,6 +8,7 @@ import { Typography } from "@mui/material";
 
 const searchComponent = <Search />;
 const searchListsComponent = <SearchLists />;
+const searchListsComponent = <SearchMasonry />;
 
 describe("Should get home page and nested components", () => {
   // Get subtitle of the application in the main page
