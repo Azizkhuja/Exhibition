@@ -79,7 +79,7 @@ describe("Should get home page and nested components", () => {
   // Foot part tests
   // Get "company logo" in Home page from Footer component
   it("get footer logo", () => {
-    render(<Footer />);
+    render(footerComponent);
     const getFooterLogo = screen.getByRole("heading", {
       name: /ipro museums/i,
     });
