@@ -105,7 +105,7 @@ describe("Should get home page and nested components", () => {
   });
   // Get "Employment" button in Home page footer
   it("get Employment in footer", () => {
-    render(<Footer />);
+    render(footerComponent);
     const getEmployment = screen.getByRole("button", { name: /employment/i });
     expect(getEmployment).toBeInTheDocument();
   });
