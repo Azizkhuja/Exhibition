@@ -117,7 +117,7 @@ describe("Should get home page and nested components", () => {
   });
   // Get "Collecting Policy" button in Home page footer
   it("get collecting policy in footer", () => {
-    render(<Footer />);
+    render(footerComponent);
     const getCollectingPolicy = screen.getByRole("button", {
       name: /collecting policy/i,
     });
