@@ -111,7 +111,7 @@ describe("Should get home page and nested components", () => {
   });
   // Get "Press" button in Home page footer
   it("get Press in footer", () => {
-    render(<Footer />);
+    render(footerComponent);
     const getPress = screen.getByRole("button", { name: /press/i });
     expect(getPress).toBeInTheDocument();
   });
