@@ -139,7 +139,7 @@ describe("Should get home page and nested components", () => {
   });
   // Get Newsletter button in Home page footer
   it("Get 'Newsletter' button in Home page footer", () => {
-    render(<Footer />);
+    render(footerComponent);
     const getNewsLetterBtn = screen.getByRole("button", {
       name: /newsletter/i,
     });
