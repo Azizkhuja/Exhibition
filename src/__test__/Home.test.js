@@ -147,7 +147,7 @@ describe("Should get home page and nested components", () => {
   });
   // Get "Sign up to get the latest news" text in Home page footer
   it("Get 'Sign up to get the latest news' button in Home page footer", () => {
-    render(<Footer />);
+    render(footerComponent);
     const getSignUpText = screen.getByText(/sign up to get the latest news/i);
     expect(getSignUpText).toBeInTheDocument();
   });
