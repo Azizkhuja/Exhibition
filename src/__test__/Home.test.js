@@ -175,7 +175,7 @@ describe("Should get home page and nested components", () => {
     });
     expect(getDigitalText).toBeInTheDocument();
   });
-  // Get "Digital accessibility" in Home page footer
+  // Get "FAQS" in Home page footer
   it("Digital accessibility' button in Home page footer", () => {
     render(footerComponent);
     const getFAQsText = screen.getByRole("button", {
