@@ -153,7 +153,7 @@ describe("Should get home page and nested components", () => {
   });
   // Get "Terms of use" text button in Home page footer
   it("Get 'Terms of use' button in Home page footer", () => {
-    render(<Footer />);
+    render(footerComponent);
     const getTermsOfUseText = screen.getByRole("button", {
       name: /terms of use/i,
     });
