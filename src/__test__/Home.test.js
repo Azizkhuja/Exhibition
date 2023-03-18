@@ -161,7 +161,7 @@ describe("Should get home page and nested components", () => {
   });
   // Get "Privacy statement" text button in Home page footer
   it("Get 'Privacy statement' button in Home page footer", () => {
-    render(<Footer />);
+    render(footerComponent);
     const getPrivacyText = screen.getByRole("button", {
       name: /privacy statement/i,
     });
