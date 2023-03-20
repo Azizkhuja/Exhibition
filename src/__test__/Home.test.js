@@ -209,7 +209,7 @@ describe("Should get home page and nested components", () => {
   });
   // Get "API" in Home page footer
   it("Get 'API' in Home page footer", () => {
-    render(<Footer />);
+    render(footerComponent);
     const getAPIText = screen.getByRole("button", {
       name: /api/i,
     });
